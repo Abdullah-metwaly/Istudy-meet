@@ -1,0 +1,60 @@
+$footer-color:#000000;
+$main-color:#159DD7;
+footer{
+    text-align: center;
+    background-color: $footer-color;
+    .first{
+        padding: 50px;
+        text-align: center;
+        color: #fff;
+        &>div{
+            ul{
+                list-style: none;
+                margin-right: 50px;
+            }
+            .btn{
+                padding: 10px 30px 10px 30px;
+                border-radius: 18px;
+                border-color: #fff;
+                margin-right: 30px;
+                float: right;
+                background-color: transparent;
+                &:hover{
+                    background-color: $main-color;
+                    border-color: $main-color;
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .second{
+        background-color: $main-color;
+        padding: 20px;
+            ul{
+                list-style: none;
+                padding: 0;
+                li{
+                    margin-top: 20px;
+                    display: inline-block;
+                    padding: 10px;
+                    background-color: #fff;
+                    border-radius: 50%;
+                    i{color: $main-color;}
+                    &:hover{
+                        background-color: $main-color;
+                        border-color: $main-color;
+                        i{color: #fff;}
+                    }
+                }
+            }
+        .foot-links{
+            ul{
+                    a{
+                        color: #fff;
+                        padding: 20px;
+                    }
+            }
+        }
+    }
+    .rights{color: #fff;}
+}
