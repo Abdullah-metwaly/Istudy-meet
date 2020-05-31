@@ -1,0 +1,27 @@
+.signIn {
+    .sign-block {
+        height: 490px !important;
+        width: 500px !important;
+        input {
+            border-radius: 5px;
+            direction: rtl;
+            padding: 5px;
+            border: 2px solid $gray-color;
+            float: right;
+            margin: 10px 10px 15px 20px;
+        }
+        
+        .select {
+            select {
+                border-radius: 4px;
+                border: 1px solid $gray-color;
+                direction: rtl;
+                width: 90px;
+                text-decoration: none;
+            }
+        }
+        .btn {
+            margin-top: 30px;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+.signIn {
+    .sign-block {
+        height: 520px !important;
+        width: 500px !important;
+        .row {
+            padding: 0;
+            .back {
+                width: 120px;
+                height: 120px;
+                border-radius: 50%;
+                @extend.box-shadow;
+            }
+            i {
+                line-height: 120px;
+                color: $main-color;
+                font-size: 70px;
+            }
+        }
+        label {
+            float: right;
+        }
+    }
+}

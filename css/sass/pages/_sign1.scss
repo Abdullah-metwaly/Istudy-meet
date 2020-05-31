@@ -1,0 +1,29 @@
+.signIn {
+    .left-sec{
+        h3{font-size: 40px;span{font-weight: normal;}}
+        text-align: right;
+        direction: rtl;
+        color: #fff;
+    }
+    .btn{
+        color: #fff;
+        border: 1px solid #fff;
+    }
+    .sign-block {
+        height: 490px !important;
+        width: 500px !important;
+        .row {
+            .back {
+                width: 120px;
+                height: 120px;
+                border-radius: 50%;
+                @extend.box-shadow;
+            }
+            i {
+                line-height: 120px;
+                color: $main-color;
+                font-size: 70px;
+            }
+        }
+    }
+}
