@@ -1,0 +1,15 @@
+.signIn{
+    .sign-block{
+        height: 410px !important;
+        width: 500px !important;
+        input{
+            border-radius: 5px;
+            direction: rtl;
+            padding:5px;
+            border: 1px solid $gray-color;
+            float: right;
+            margin: 10px 10px 15px 20px;
+
+}
+    }
+}

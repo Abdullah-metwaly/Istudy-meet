@@ -1,0 +1,49 @@
+.signIn {
+    height: 120vh;
+    .sign-block {
+        height: 620px !important;
+        .text {
+            text-align: right;
+        }
+        .laws {
+            padding-bottom: 9px;
+            direction: rtl;
+            label {
+                padding: 0 30px 0 6px;
+                color: $main-color;
+            }
+        }
+        .check-sec {
+            width: 420px;
+            margin-left: -30px;
+            height: 99px;
+            background-color: rgba($gray-color, $alpha: 0.4);
+            label {
+                // width: 30px;
+                // height: 30px;
+                background-color: $main-color;
+            }
+            input {
+                direction: rtl;
+                margin: 10px 0 0 0;
+                border-radius: 4px;
+                width: 100px;
+                border: 1px solid $gray-color;
+                &:last-of-type {
+                    border-radius: 8px;
+                    height: 20px;
+                    width: 80px;
+                }
+            }
+            .code {
+                margin: 0;
+                // opacity: 1;
+                // background-color: #fff;
+                color: $main-color;
+            }
+        }
+        .btn {
+            margin: 12px;
+        }
+    }
+}
