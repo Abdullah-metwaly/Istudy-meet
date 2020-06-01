@@ -9,11 +9,20 @@
   background-color: rgba(21, 157, 215, 0.7); }
 
 body {
-  height: 120vh; }
+  height: 125vh; }
 
 .signIn .sign-block {
-  height: 600px !important;
+  padding: 0 !important;
+  height: 640px !important;
   width: 500px !important; }
+.signIn .sign-block .option a {
+  line-height: 50px; }
+.signIn .sign-block .option .active {
+  margin: 0;
+  background-color: #159DD7;
+  height: 50px; }
+.signIn .sign-block .option .active a {
+  color: #fff; }
 .signIn .sign-block h5 {
   color: #159DD7; }
 .signIn .sign-block h5 img {
@@ -31,8 +40,10 @@ body {
   color: #159DD7;
   font-size: 70px; }
 .signIn .sign-block label {
+  margin-right: 30px;
   float: right; }
 .signIn .sign-block input {
+  margin-right: 30px;
   width: 80%;
   float: right; }
 .signIn .sign-block .laws {
@@ -45,4 +56,4 @@ body {
 .signIn .sign-block .btn-secondary {
   background-color: #707070 !important; }
 
-/*# sourceMappingURL=log2.css.map */
+/*# sourceMappingURL=log1.css.map */

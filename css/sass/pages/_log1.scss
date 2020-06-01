@@ -1,8 +1,24 @@
-body{height: 120vh;}
+body {
+    height: 125vh;
+}
 .signIn {
     .sign-block {
-        height: 600px !important;
+        padding: 0 !important;
+        height: 640px !important;
         width: 500px !important;
+        .option {
+            a {
+                line-height: 50px;
+            }
+            .active {
+                margin: 0;
+                background-color: $main-color;
+                height: 50px;
+                a {
+                    color: #fff;
+                }
+            }
+        }
         h5 {
             color: $main-color;
             img {
@@ -10,7 +26,10 @@ body{height: 120vh;}
             }
         }
         .row {
-            &>div{padding: 0;margin-bottom: 30px;}
+            & > div {
+                padding: 0;
+                margin-bottom: 30px;
+            }
             .back {
                 margin: auto;
                 width: 120px;
@@ -25,24 +44,25 @@ body{height: 120vh;}
             }
         }
         label {
+            margin-right: 30px;
             float: right;
         }
         input {
+            margin-right: 30px;
             width: 80%;
             float: right;
         }
         .laws {
             padding: 10px;
             input {
-                // margin: auto;
                 width: 40px !important;
             }
-            label{
+            label {
                 margin: -7px;
                 color: $main-color;
             }
         }
-        .btn-secondary{
+        .btn-secondary {
             background-color: $gray-color !important;
         }
     }
