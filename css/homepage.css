@@ -1,4 +1,4 @@
-.box-shadow, .meet-features .prag {
+.box-shadow, .meet-features .prag, .why-meet .msg-one .block, .why-meet .msg-one .block .inner .fchild, .why-meet .msg-two .block, .why-meet .msg-three .block {
   -webkit-box-shadow: 0px 10px 10px 0px #e9e9e9;
   -moz-box-shadow: 0px 10px 10px 0px #e9e9e9;
   box-shadow: 0px 10px 10px 0px #e9e9e9; }
@@ -7,9 +7,6 @@
   width: 100%;
   height: 100%;
   background-color: rgba(21, 157, 215, 0.7); }
-
-body {
-  height: 10000px; }
 
 .head {
   padding: 40px; }
@@ -127,5 +124,137 @@ body {
 .why-meet .row li i {
   color: #707070;
   font-size: 50px; }
+.why-meet .msg-one, .why-meet .msg-two, .why-meet .msg-three {
+  display: none; }
+.why-meet .msg-one .block {
+  position: relative;
+  margin-top: -600px;
+  border-radius: 9px;
+  width: 300px;
+  height: 550px;
+  background-color: #fff; }
+.why-meet .msg-one .block .head {
+  padding: 0;
+  color: #fff;
+  background-color: #159DD7;
+  border-radius: 9px 9px 0 0;
+  height: 160px; }
+.why-meet .msg-one .block .head img {
+  padding-top: 22px;
+  padding-left: 4px; }
+.why-meet .msg-one .block .head p {
+  text-align: right;
+  padding-right: 9px; }
+.why-meet .msg-one .block .head p img {
+  margin-top: -3px;
+  margin-right: 20px; }
+.why-meet .msg-one .block .inner .fchild {
+  border-radius: 9px;
+  margin-top: -20px;
+  height: 200px;
+  text-align: center;
+  background-color: #fff; }
+.why-meet .msg-one .block .inner .fchild p {
+  font-size: 20px;
+  color: #000;
+  text-align: right;
+  padding: 5px; }
+.why-meet .msg-one .block .inner .fchild p span {
+  font-size: 12px;
+  color: #707070; }
+.why-meet .msg-one .block .inner .fchild img {
+  width: 230px; }
+.why-meet .msg-one .block .inner .fchild .btn {
+  float: right;
+  margin: 18px;
+  background-color: #159DD7; }
+.why-meet .msg-one .block .inner .fchild .btn i {
+  margin-right: 8px; }
+.why-meet .msg-one .block .inner .schild {
+  border-radius: 9px;
+  margin-top: 30px;
+  box-shadow: 0px 0px 18px -2px lightgray;
+  height: 90px;
+  padding: 3px;
+  background-color: #fff; }
+.why-meet .msg-one .block .inner .schild p {
+  text-align: right;
+  font-weight: bold;
+  font-size: 15px;
+  padding-right: 9px; }
+.why-meet .msg-one .block .inner .schild input {
+  float: right;
+  width: 70%;
+  border-radius: 0 3px 3px 0;
+  border-left: transparent; }
+.why-meet .msg-one .block .inner .schild .btn {
+  float: right;
+  background-color: #159DD7;
+  height: 38px;
+  border-radius: 3px 0 0 3px; }
+.why-meet .msg-one .block .inner .schild .btn i {
+  font-size: 25px; }
+.why-meet .msg-two .block, .why-meet .msg-three .block {
+  position: relative;
+  margin-top: -550px;
+  margin-right: 340px;
+  border-radius: 9px;
+  width: 300px;
+  height: 550px;
+  background-color: #fff; }
+.why-meet .msg-two .block .head, .why-meet .msg-three .block .head {
+  padding: 0;
+  color: #fff;
+  background-color: #159DD7;
+  border-radius: 9px 9px 0 0;
+  height: 160px; }
+.why-meet .msg-two .block .head img, .why-meet .msg-three .block .head img {
+  padding-left: 4px; }
+.why-meet .msg-two .block .head p, .why-meet .msg-three .block .head p {
+  text-align: right;
+  padding-right: 9px; }
+.why-meet .msg-two .block .head .tm, .why-meet .msg-three .block .head .tm {
+  text-align: center; }
+.why-meet .msg-two .block .head .tm img, .why-meet .msg-three .block .head .tm img {
+  width: 260px; }
+.why-meet .msg-two .block .inner input, .why-meet .msg-two .block .inner textarea, .why-meet .msg-three .block .inner input, .why-meet .msg-three .block .inner textarea {
+  border-radius: 0;
+  border: transparent;
+  border-bottom: 1px solid #707070; }
+.why-meet .msg-two .block .inner textarea, .why-meet .msg-three .block .inner textarea {
+  height: 100px; }
+.why-meet .msg-two .block .inner .btn, .why-meet .msg-three .block .inner .btn {
+  font-size: 30px;
+  border-radius: 50%;
+  left: 20px;
+  position: absolute;
+  bottom: 20px;
+  background-color: #159DD7;
+  transform: rotate(270deg); }
+.why-meet .msg-three .block {
+  margin-right: 700px !important; }
+.why-meet .msg-three .inner {
+  padding: 60px;
+  text-align: center; }
+.why-meet .msg-three .inner p {
+  vertical-align: middle;
+  color: #159DD7; }
+.why-meet .msg-three .inner p i {
+  padding-top: 10px;
+  font-size: 60px; }
+.why-meet .chat .btn {
+  background-color: #159DD7;
+  height: 60px;
+  width: 60px;
+  font-size: 30px;
+  border-radius: 50%;
+  float: right; }
+.why-meet .chat .btn i {
+  line-height: 45px; }
+.why-meet .chat p {
+  color: #159DD7;
+  padding-top: 17px;
+  padding-right: 70px;
+  text-align: right; }
 
 /*# sourceMappingURL=homepage.css.map */
