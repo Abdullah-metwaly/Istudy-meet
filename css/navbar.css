@@ -16,25 +16,85 @@
   font-size: 20px;
   padding: 20px; }
 .navbar .navbar-nav .nav-item:hover {
-  color: #159DD7;
-  border-bottom: 1px solid #159DD7; }
+  color: #159dd7;
+  border-bottom: 1px solid #159dd7; }
 .navbar .navbar-nav-left .nav-item {
   margin: 20px; }
 .navbar .navbar-nav-left .nav-item .btn {
   border-radius: 18px;
-  background-color: #159DD7; }
+  background-color: #159dd7; }
 .navbar .navbar-nav-left .nav-item .btn:hover {
-  color: #159DD7;
+  color: #159dd7;
   background-color: #fff; }
 .navbar .navbar-nav-left .nav-item:last-child {
   padding: 8px;
   color: #424242;
   border-radius: 18px;
-  border: 1px solid #E1E1E1; }
+  border: 1px solid #e1e1e1; }
 .navbar .navbar-nav-left .nav-item:last-child:hover {
   color: #fff;
   text-decoration: none;
-  background-color: #159DD7;
-  border: #159DD7; }
+  background-color: #159dd7;
+  border: #159dd7; }
+.navbar .my-room li {
+  cursor: pointer;
+  text-align: center;
+  list-style: none;
+  padding-left: 100px;
+  margin-top: 30px;
+  color: #159dd7; }
+.navbar .my-room li::after {
+  content: "";
+  display: block;
+  margin-top: 10px;
+  width: 66px;
+  border-bottom: 3px solid #159dd7; }
+.navbar .login-part {
+  margin-left: 40px; }
+.navbar .login-part a {
+  float: left; }
+.navbar .login-part img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; }
+.navbar .login-part p, .navbar .login-part i {
+  padding: 10px;
+  color: #707070; }
+.navbar .login-part i {
+  line-height: 27px; }
+.navbar .login-part .block {
+  display: none;
+  background-color: #fff;
+  margin-top: 70px;
+  position: absolute;
+  text-align: right;
+  padding: 0;
+  width: 180px;
+  left: 65px;
+  box-shadow: 0px 0px 15px 3px #acaeb5; }
+.navbar .login-part .block::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: -15px;
+  right: 15px;
+  border-style: solid;
+  border-width: 0 15px 16px 15px;
+  border-color: transparent transparent #fff transparent; }
+.navbar .login-part .block ul {
+  padding: 0; }
+.navbar .login-part .block ul li {
+  cursor: pointer;
+  padding: 5px;
+  color: #707070; }
+.navbar .login-part .block ul li:first-of-type {
+  border-bottom: 1px solid #707070; }
+.navbar .login-part .block ul li:last-of-type {
+  border-top: 1px solid #707070; }
+.navbar .login-part .block ul li .btn {
+  text-align: right;
+  width: 94%;
+  background-color: #159dd7; }
 
 /*# sourceMappingURL=navbar.css.map */

@@ -35,4 +35,16 @@ $(document).ready(function () {
     $(".why-meet .msg-two input, .why-meet .msg-two textarea").click(function () {
         $(".why-meet .msg-two .btn").removeClass('disabled');
     });
+    // for the login navbar button
+    $("#dropPlus").click(function(){
+        $(this).toggleClass('fa-plus fa-minus');
+        $(".login-part .block").fadeToggle(500);
+    });
+    // for small popup menu 
+    $('.gear').click(function(){
+        $(this).css(
+            'transform' ,  'rotate(45deg)'
+        );
+        $($(this).data('click')).fadeToggle(600);
+    });
 });
