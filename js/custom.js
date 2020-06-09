@@ -47,4 +47,12 @@ $(document).ready(function () {
         );
         $($(this).data('click')).fadeToggle(600);
     });
+    // for the popup page
+    $('#startLesson').click(function(){
+        console.log('clicked');
+        $('.popup').fadeIn(500);
+        $('.close').click(function(){
+            $(this).parent().parent().fadeOut(500);
+        });
+    });
 });
