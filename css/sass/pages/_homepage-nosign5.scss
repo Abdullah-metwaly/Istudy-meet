@@ -1,0 +1,36 @@
+.table{
+    .row{
+        border: 1px solid #000;
+        border-bottom: none;
+        color: $gray-color;
+        &:first-of-type{
+            color: $main-color;
+            margin-top: 50px;
+            height: 60px;
+            line-height: 60px;
+        }
+        &:last-of-type{
+            border-bottom: 1px solid #000;
+        }
+        &>div{
+            height: 50px;
+        }
+        .col-8{
+          p{
+              line-height: 50px;
+          }
+        }
+    .list-unstyled{
+        &>li{
+            padding: 10px;
+            float: right;
+            line-height: 30px;   
+        }
+        img{
+            border-radius: 50%;
+            width: 35px;
+            height: 35px;
+        }
+    }
+}
+}

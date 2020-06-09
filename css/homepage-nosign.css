@@ -42,11 +42,22 @@
   width: 30%;
   border-left: transparent;
   border-radius: 0 3px 3px 0; }
-.container .start-lesson .btn {
+.container .start-lesson .btn-success {
   margin-right: -4px;
   margin-top: -5px;
   border-right: transparent;
-  border-radius: 3px 0 0 3px; }
+  border-radius: 3px 0 0 3px;
+  margin-left: 10px; }
+.container .start-lesson button {
+  margin-top: -4px;
+  border-radius: 5px;
+  background-color: #F7F8FA; }
+.container .start-lesson button i {
+  cursor: pointer;
+  font-size: 18px;
+  padding: 4px; }
+.container .start-lesson .btn {
+  margin-top: -4px; }
 .container .lessons {
   padding: 20px;
   cursor: pointer; }
