@@ -55,4 +55,30 @@ $(document).ready(function () {
             $(this).parent().parent().fadeOut(500);
         });
     });
+    // for courses taps
+    $('.courses-section ul li').click(function(){
+        $(this).addClass('active').siblings().removeClass('active');
+        $($(this).data('class')).removeClass('d-none').fadeIn("slow").siblings().addClass('d-none');
+    });
+            // pop up for courses
+              // for the popup page
+                    $('.course').click(function(){
+                        console.log('clicked');
+                        $('.popup').fadeIn(500);
+                        $('.close').click(function(){
+                            $(this).parent().parent().fadeOut(500);
+                        });
+                    });
+                    $('#paynow').click(function(){
+                        $(this).parent().parent().fadeOut();
+                        $('.payment-popup').fadeIn(500);
+                    });
+                    $('#paybtn').click(function(){
+                        $(this).parent().parent().fadeOut();
+                        $('.finish-popup').fadeIn(500);
+                        $('body').css('overflow', 'hidden');
+                    });
+                    $('#finish-popping').click(function(){
+                        $(this).parent().parent().fadeOut(1000);
+                    });
 });

@@ -1,0 +1,121 @@
+.box-shadow, .courses-section .parent-all .course {
+  -webkit-box-shadow: 0px 10px 10px 0px #e9e9e9;
+  -moz-box-shadow: 0px 10px 10px 0px #e9e9e9;
+  box-shadow: 0px 10px 10px 0px #e9e9e9; }
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(21, 157, 215, 0.7); }
+
+.courses-section .row {
+  padding: 60px; }
+.courses-section .row ul {
+  margin: auto; }
+.courses-section .row ul .active {
+  background-color: #f9f9f9;
+  color: #159DD7; }
+.courses-section .row ul li {
+  cursor: pointer;
+  padding: 9px;
+  display: inline; }
+.courses-section .parent-all .course {
+  margin-bottom: 20px; }
+.courses-section .parent-all .course .course-img {
+  width: 225px;
+  height: 150px;
+  background-image: url("../images/Clip.png"); }
+.courses-section .parent-all .course .course-img .overlay {
+  opacity: 0;
+  transition: 0.5s ease;
+  cursor: pointer;
+  text-align: center;
+  background-color: rgba(77, 79, 79, 0.7);
+  line-height: 160px; }
+.courses-section .parent-all .course .course-img .overlay i {
+  color: #159DD7;
+  font-size: 50px; }
+.courses-section .parent-all .course .course-img:hover .overlay {
+  opacity: 1; }
+.courses-section .parent-all .course .course-desc {
+  padding: 10px; }
+.courses-section .parent-all .course .course-review {
+  color: #FDC735; }
+
+.popup, .payment-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(151, 151, 151, 0.5); }
+.popup .container, .payment-popup .container {
+  padding: 100px;
+  position: fixed;
+  text-align: center;
+  border-radius: 9px;
+  top: 50%;
+  margin-top: -275px;
+  left: 50%;
+  margin-left: -250px;
+  width: 500px;
+  height: 550px;
+  background-color: #fff; }
+.popup .container .close, .payment-popup .container .close {
+  position: absolute;
+  cursor: pointer;
+  top: 10px;
+  left: 10px; }
+.popup .container h4, .payment-popup .container h4 {
+  margin-top: -100px;
+  margin-bottom: 60px;
+  padding: 10px; }
+.popup .container p, .payment-popup .container p {
+  text-align: right; }
+
+.payment-popup .container {
+  direction: rtl; }
+.payment-popup .container .form-control {
+  margin-bottom: 10px; }
+.payment-popup .container input {
+  border-radius: 5px;
+  border: 1px solid #707070; }
+.payment-popup .container input[type="number"] {
+  width: 95%;
+  border-radius: 5px;
+  border: 1px solid #707070; }
+.payment-popup .container p {
+  font-size: 10px; }
+.payment-popup .container select {
+  width: 100%;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #707070; }
+.payment-popup .container input[type="checkbox"] {
+  float: right;
+  margin-left: 18px; }
+.payment-popup .container h1 {
+  font-size: 19px;
+  line-height: 45px; }
+.payment-popup .container p:last-of-type {
+  color: #34ab44; }
+
+.finish-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  overflow: hidden;
+  z-index: 99999999; }
+.finish-popup body {
+  overflow: hidden; }
+.finish-popup .container {
+  position: fixed;
+  top: 25%;
+  left: 9%; }
+
+/*# sourceMappingURL=courses.css.map */

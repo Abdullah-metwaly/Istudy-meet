@@ -1,0 +1,145 @@
+.courses-section {
+    .row {
+        padding: 60px;
+        ul {
+            margin: auto;
+            .active {
+                background-color: #f9f9f9;
+                color: $main-color;
+            }
+            li {
+                cursor: pointer;
+                padding: 9px;
+                display: inline;
+            }
+        }
+    }
+    .parent-all {
+        .course {
+            @extend .box-shadow;
+            margin-bottom: 20px;
+            .course-img {
+                width: 225px;
+                height: 150px;
+                background-image: url("../images/Clip.png");
+                .overlay {
+                    opacity: 0;
+                    transition: 0.5s ease;
+                    cursor: pointer;
+                    text-align: center;
+                    background-color: rgba(77, 79, 79, 0.7);
+                    line-height: 160px;
+                    i {
+                        color: $main-color;
+                        font-size: 50px;
+                    }
+                }
+                &:hover .overlay {
+                    opacity: 1;
+                }
+            }
+            .course-desc {
+                padding: 10px;
+            }
+            .course-review {
+                color: $gold-color;
+            }
+        }
+    }
+}
+
+.popup,
+.payment-popup{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: #979797, $alpha: 0.5);
+    .container {
+        padding: 100px;
+        position: fixed;
+        text-align: center;
+        border-radius: 9px;
+        top: 50%;
+        margin-top: -275px;
+        left: 50%;
+        margin-left: -250px;
+        width: 500px;
+        height: 550px;
+        background-color: #fff;
+        .close {
+            position: absolute;
+            cursor: pointer;
+            top: 10px;
+            left: 10px;
+        }
+        h4 {
+            margin-top: -100px;
+            margin-bottom: 60px;
+            padding: 10px;
+        }
+        p {
+            text-align: right;
+        }
+    }
+}
+.payment-popup {
+    .container {
+        direction: rtl;
+        .form-control {
+            margin-bottom: 10px;
+        }
+        input {
+            border-radius: 5px;
+            border: 1px solid $gray-color;
+        }
+        input[type="number"] {
+            width: 95%;
+            border-radius: 5px;
+            border: 1px solid $gray-color;
+        }
+        p {
+            font-size: 10px;
+          
+        }
+        select {
+            width: 100%;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid $gray-color;
+        }
+        input[type="checkbox"] {
+            float: right;
+            margin-left: 18px;
+        }
+        h1 {
+            font-size: 19px;
+            line-height: 45px;
+        }
+        p{
+            &:last-of-type {
+                color: #34ab44;
+            }
+        }
+    }
+}
+.finish-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: #ffffff, $alpha: 1);overflow: hidden;
+    z-index: 99999999;
+    body{
+        overflow: hidden;
+    }
+    .container{
+        position: fixed;
+        top: 25%;
+        left: 9%;
+    }
+}
