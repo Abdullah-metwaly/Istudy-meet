@@ -1,0 +1,93 @@
+.about-us{
+    height: 300px;
+    background-image: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../images/banner.png');
+    .overlay{
+        text-align: right;
+        color: #fff;
+        padding: 50px;
+        h3{
+        font-size: 100px;
+        }
+    }
+}
+.story,.compare{
+    padding: 100px;
+    .row{
+        direction: rtl;
+        text-align: right;
+        .btn{
+            background-color: $main-color;
+            border-color: $main-color;
+        }
+        img{
+            border-radius: 5px;
+        }
+    }
+}
+.compare{
+            background-color: #F9F9F9;
+            h3{
+                margin-bottom: 30px;
+            span{
+                display: inline;
+                color:$main-color;
+            }
+        }
+}
+.team{
+    background-color: #F9F9F9;
+    &>div{
+        float: right;
+        width: 50%;
+        text-align: right;
+        img{
+            width: 100%;
+        }
+    }
+    .team-dsc{
+        padding: 30px;
+        direction: rtl;
+    }
+}
+.best-teachers{
+    padding: 50px;
+    text-align: right;
+    color: $main-color;
+    margin: auto;
+    h4{
+        font-size: 30px;
+    }
+    .teacher{
+        width: 25%;
+        margin: 0;
+        padding: 0;
+        float: right;
+        margin-bottom: 100px ;
+        p{
+            font-size: 25px;
+            span{
+                color: $gray-color;
+                font-size: 13px;
+            }
+        }
+    }
+}
+.ready{
+    height: 350px;
+    width: 100%;
+    background-image: url('../images/ready.png');
+    color: #fff;
+    .inside{
+        padding: 70px;
+        h4{
+            font-size: 30px;
+        }
+        .btn{
+            border-color: $main-color;
+            background-color: $main-color;
+        }
+    }
+}

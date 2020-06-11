@@ -1,0 +1,109 @@
+.box-shadow {
+  -webkit-box-shadow: 0px 10px 10px 0px #e9e9e9;
+  -moz-box-shadow: 0px 10px 10px 0px #e9e9e9;
+  box-shadow: 0px 10px 10px 0px #e9e9e9; }
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(21, 157, 215, 0.7); }
+
+.student-sign, .student-signup1, .student-signup2, .student-signup3 {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #979797; }
+.student-sign .container, .student-signup1 .container, .student-signup2 .container, .student-signup3 .container {
+  padding: 40px;
+  direction: rtl;
+  position: fixed;
+  text-align: center;
+  border-radius: 9px;
+  top: 50%;
+  margin-top: -275px;
+  left: 50%;
+  margin-left: -250px;
+  width: 500px;
+  height: 570px;
+  background-color: #fff; }
+.student-sign .container .teacher, .student-signup1 .container .teacher, .student-signup2 .container .teacher, .student-signup3 .container .teacher {
+  border-color: #707070 !important;
+  color: #707070 !important;
+  padding: 12px; }
+.student-sign .container .student, .student-sign .container .teacher, .student-signup1 .container .student, .student-signup1 .container .teacher, .student-signup2 .container .student, .student-signup2 .container .teacher, .student-signup3 .container .student, .student-signup3 .container .teacher {
+  margin: auto;
+  border: 1px solid #159DD7;
+  border-radius: 5px;
+  width: 110px;
+  height: 90px;
+  position: relative;
+  color: #159DD7; }
+.student-sign .container .student i:first-of-type, .student-sign .container .teacher i:first-of-type, .student-signup1 .container .student i:first-of-type, .student-signup1 .container .teacher i:first-of-type, .student-signup2 .container .student i:first-of-type, .student-signup2 .container .teacher i:first-of-type, .student-signup3 .container .student i:first-of-type, .student-signup3 .container .teacher i:first-of-type {
+  font-size: 40px; }
+.student-sign .container .student i:last-of-type, .student-sign .container .teacher i:last-of-type, .student-signup1 .container .student i:last-of-type, .student-signup1 .container .teacher i:last-of-type, .student-signup2 .container .student i:last-of-type, .student-signup2 .container .teacher i:last-of-type, .student-signup3 .container .student i:last-of-type, .student-signup3 .container .teacher i:last-of-type {
+  position: relative;
+  z-index: 99999;
+  margin-top: 2px;
+  font-size: 25px; }
+.student-sign .container .form-control, .student-signup1 .container .form-control, .student-signup2 .container .form-control, .student-signup3 .container .form-control {
+  margin: 10px 0 10px 0; }
+
+.student-signup1 .container, .student-signup2 .container, .student-signup3 .container {
+  padding: 10px;
+  top: 50%;
+  margin-top: -275px;
+  left: 50%;
+  margin-left: -300px;
+  width: 600px;
+  height: 550px;
+  background-color: #fff; }
+.student-signup1 .container h3, .student-signup2 .container h3, .student-signup3 .container h3 {
+  margin-top: 19px; }
+.student-signup1 .container .first-step, .student-signup1 .container .second-step, .student-signup2 .container .first-step, .student-signup2 .container .second-step, .student-signup3 .container .first-step, .student-signup3 .container .second-step {
+  position: absolute;
+  right: 190px;
+  top: 0;
+  color: #fff;
+  padding: 10px;
+  border-radius: 0 0 8px 8px;
+  background-color: #34ab44; }
+.student-signup1 .container .img, .student-signup2 .container .img, .student-signup3 .container .img {
+  padding: 0;
+  width: 100%;
+  height: 100%; }
+.student-signup1 .container .bottom-line, .student-signup2 .container .bottom-line, .student-signup3 .container .bottom-line {
+  padding: 3px;
+  border-bottom: 1px solid #707070; }
+.student-signup1 .container .row .student, .student-signup1 .container .row .teacher, .student-signup2 .container .row .student, .student-signup2 .container .row .teacher, .student-signup3 .container .row .student, .student-signup3 .container .row .teacher {
+  cursor: pointer;
+  width: 90px;
+  height: 70px;
+  margin-bottom: 20px; }
+.student-signup1 .container .row .student i:first-of-type, .student-signup1 .container .row .teacher i:first-of-type, .student-signup2 .container .row .student i:first-of-type, .student-signup2 .container .row .teacher i:first-of-type, .student-signup3 .container .row .student i:first-of-type, .student-signup3 .container .row .teacher i:first-of-type {
+  font-size: 18px !important; }
+.student-signup1 .container .row .student i:last-of-type, .student-signup1 .container .row .teacher i:last-of-type, .student-signup2 .container .row .student i:last-of-type, .student-signup2 .container .row .teacher i:last-of-type, .student-signup3 .container .row .student i:last-of-type, .student-signup3 .container .row .teacher i:last-of-type {
+  margin-top: 1px;
+  font-size: 17px !important; }
+.student-signup1 .container .lower span, .student-signup2 .container .lower span, .student-signup3 .container .lower span {
+  color: #159DD7; }
+
+.student-signup2 {
+  height: 280vh;
+  background-color: #979797; }
+.student-signup2 .container {
+  position: relative;
+  padding: 40px !important;
+  top: 50%;
+  margin-top: -840px;
+  height: 650px; }
+.student-signup2 .second-step {
+  right: 10px !important;
+  background-color: #707070 !important; }
+.student-signup2 .p {
+  font-size: 8px; }
+
+.student-signup3 .container {
+  height: 430px; }
+
+/*# sourceMappingURL=student-sign.css.map */

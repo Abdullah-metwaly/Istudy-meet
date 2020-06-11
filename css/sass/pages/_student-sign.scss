@@ -1,0 +1,137 @@
+
+.student-sign,
+.student-signup1,
+.student-signup2,
+.student-signup3 {
+    // position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: #979797, $alpha: 1);
+    .container {
+        padding: 40px;
+        direction: rtl;
+        position: fixed;
+        text-align: center;
+        border-radius: 9px;
+        top: 50%;
+        margin-top: -275px;
+        left: 50%;
+        margin-left: -250px;
+        width: 500px;
+        height: 570px ;
+        background-color: #fff;
+        .teacher {
+            border-color: $gray-color !important;
+            color: $gray-color !important;
+            padding: 12px;
+        }
+        .student,
+        .teacher {
+            margin: auto;
+            border: 1px solid $main-color;
+            border-radius: 5px;
+            width: 110px;
+            height: 90px;
+            position: relative;
+            color: $main-color;
+            i {
+                &:first-of-type {
+                    font-size: 40px;
+                }
+                &:last-of-type {
+                    position: relative;
+                    z-index: 99999;
+                    margin-top: 2px;
+                    font-size: 25px;
+                }
+            }
+        }
+        .form-control {
+            margin: 10px 0 10px 0;
+        }
+    }
+}
+.student-signup1,
+.student-signup2,
+.student-signup3 {
+    .container {
+        padding: 10px;
+        top: 50%;
+        margin-top: -275px;
+        left: 50%;
+        margin-left: -300px;
+        width: 600px;
+        height: 550px;
+        background-color: #fff;
+        h3 {
+            margin-top: 19px;
+        }
+        .first-step,
+        .second-step {
+            position: absolute;
+            right: 190px;
+            top: 0;
+            color: #fff;
+            padding: 10px;
+            border-radius: 0 0 8px 8px;
+            background-color: #34ab44;
+        }
+        .img {
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .bottom-line {
+            padding: 3px;
+            border-bottom: 1px solid $gray-color;
+        }
+        .row {
+            .student,
+            .teacher {
+                cursor: pointer;
+                width: 90px;
+                height: 70px;
+                margin-bottom: 20px;
+                i {
+                    &:first-of-type {
+                        font-size: 18px !important;
+                    }
+                    &:last-of-type {
+                        margin-top: 1px;
+                        font-size: 17px !important;
+                    }
+                }
+            }
+        }
+        .lower {
+            span {
+                color: $main-color;
+            }
+        }
+    }
+}
+.student-signup2{
+    height: 280vh;
+    background-color: rgba($color: #979797, $alpha: 1);
+    .container {
+        position: relative;
+        padding: 40px !important;
+        top: 50%;
+        margin-top: -840px;
+        height:  650px ;
+    }
+    .second-step {
+        right: 10px !important;
+        background-color: $gray-color !important;
+    }
+    .p {
+        font-size: 8px;
+    }
+}
+.student-signup3{
+    .container{
+        height: 430px;
+    }
+}
