@@ -1,0 +1,10 @@
+So far, I have finished the first four XDs from the first email. Currently, I'm working on "teacher file XD" almost finished. 
+--- What'are the done pages for "teacher file"? 
+Basically, Accoording to the file order the first 9 rows are done or rather 29 pages for desings some page includes popups
+so, you must find the some pages implemented through its main page. 
+what are the pages name? 
+- All the home-pages 
+- Logins page 
+- Creating group class, add student, remove student, and sending an invitation. 
+- The drop-down menu taps which are lessons, records, wallet, and the settings.
+Today's date 6/12/2020

@@ -131,7 +131,7 @@
   border-width: 10px 20px 10px 0;
   border-color: transparent #fff transparent transparent; }
 
-.popup {
+.popup, .popup-group, .popup-person {
   display: none;
   position: fixed;
   top: 0;
@@ -139,7 +139,7 @@
   width: 100%;
   height: 100%;
   background-color: rgba(151, 151, 151, 0.5); }
-.popup .container {
+.popup .container, .popup-group .container, .popup-person .container {
   position: fixed;
   border-radius: 9px;
   top: 50%;
@@ -149,25 +149,25 @@
   width: 500px;
   height: 550px;
   background-color: #fff; }
-.popup .container .close {
+.popup .container .close, .popup-group .container .close, .popup-person .container .close {
   position: absolute;
   cursor: pointer;
   top: 10px;
   left: 10px; }
-.popup .container h5 {
+.popup .container h5, .popup-group .container h5, .popup-person .container h5 {
   padding: 18px; }
-.popup .container .form-control {
+.popup .container .form-control, .popup-group .container .form-control, .popup-person .container .form-control {
   width: 95%; }
-.popup .container input {
+.popup .container input, .popup-group .container input, .popup-person .container input {
   width: 90%;
   margin-bottom: 10px;
   border-radius: 5px;
   border: 1px solid #707070; }
-.popup .container .students-number {
+.popup .container .students-number, .popup-group .container .students-number, .popup-person .container .students-number {
   width: 35%; }
-.popup .container .form {
+.popup .container .form, .popup-group .container .form, .popup-person .container .form {
   padding: 10px; }
-.popup .container .form > div {
+.popup .container .form > div, .popup-group .container .form > div, .popup-person .container .form > div {
   border-radius: 5px;
   width: 100%;
   height: 40px;
@@ -175,11 +175,11 @@
   line-height: 20px;
   padding: 5px;
   border: 1px solid #707070; }
-.popup .container .form input[type=checkbox] {
+.popup .container .form input[type=checkbox], .popup-group .container .form input[type=checkbox], .popup-person .container .form input[type=checkbox] {
   height: 0;
   width: 0;
   visibility: none; }
-.popup .container .form label {
+.popup .container .form label, .popup-group .container .form label, .popup-person .container .form label {
   margin-top: -8px;
   cursor: pointer;
   text-indent: -9999px;
@@ -189,7 +189,7 @@
   display: block;
   border-radius: 100px;
   position: relative; }
-.popup .container .form label:after {
+.popup .container .form label:after, .popup-group .container .form label:after, .popup-person .container .form label:after {
   content: '';
   position: absolute;
   top: 5px;
@@ -200,12 +200,12 @@
   background: #fff;
   border-radius: 90px;
   transition: 0.3s; }
-.popup .container .form input:checked + label {
+.popup .container .form input:checked + label, .popup-group .container .form input:checked + label, .popup-person .container .form input:checked + label {
   background: #21D226; }
-.popup .container .form input:checked + label:after {
+.popup .container .form input:checked + label:after, .popup-group .container .form input:checked + label:after, .popup-person .container .form input:checked + label:after {
   left: calc(100% - 5px);
   transform: translateX(-100%); }
-.popup .container .form label:active:after {
+.popup .container .form label:active:after, .popup-group .container .form label:active:after, .popup-person .container .form label:active:after {
   width: 130px; }
 
 /*# sourceMappingURL=homepage-nosign.css.map */

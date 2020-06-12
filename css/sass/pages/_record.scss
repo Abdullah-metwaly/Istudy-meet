@@ -1,0 +1,59 @@
+.record{
+    padding: 100px;
+    .row{
+        direction: rtl;
+        &>div{
+            text-align: right;
+            float: right;
+        }
+    .lesson {
+        cursor: pointer;
+        position: relative;
+        width: 200px;
+        margin-bottom: 6px;
+        .order {
+            background-color: $main-color;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            color: #fff;
+            text-align: center;
+            line-height: 50px;
+            font-size: 30px;
+            margin-right: 10px;
+            position: relative;
+            margin-bottom: -26px;
+        }
+        .inner {
+            // position: relative;
+            padding: 10px;
+            border: 1px solid $gray-color;
+            height: 140px;
+            &:hover{
+                border: 1px solid red;
+            }
+            p {
+                margin-top: 26px;
+    
+                span {
+                    opacity: 0.8;
+                    color: $gray-color;
+                }
+            }
+        }
+      
+    }
+    .video{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .row{
+        .col-4{
+            margin: 10px 0 10px 0;
+            &:first-of-type{
+                font-weight: bold;
+            }
+        }
+    }
+}
+}

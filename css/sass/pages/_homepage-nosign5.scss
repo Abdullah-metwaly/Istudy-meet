@@ -1,36 +1,117 @@
-.table{
-    .row{
+.add {
+    padding: 4px;
+    float: left;
+}
+.table {
+    .row {
         border: 1px solid #000;
         border-bottom: none;
         color: $gray-color;
-        &:first-of-type{
+        &:first-of-type {
             color: $main-color;
             margin-top: 50px;
             height: 60px;
             line-height: 60px;
         }
-        &:last-of-type{
+        &:last-of-type {
             border-bottom: 1px solid #000;
         }
-        &>div{
+        & > div {
             height: 50px;
         }
-        .col-8{
-          p{
-              line-height: 50px;
-          }
+        .col-5,
+        .col-3 {
+            p {
+                line-height: 50px;
+                i {
+                    direction: ltr;
+                    cursor: pointer;
+                    color: #e86c60;
+                    float: left;
+                    line-height: 50px;
+                }
+            }
         }
-    .list-unstyled{
-        &>li{
-            padding: 10px;
-            float: right;
-            line-height: 30px;   
-        }
-        img{
-            border-radius: 50%;
-            width: 35px;
-            height: 35px;
+        .list-unstyled {
+            & > li {
+                padding: 10px;
+                float: right;
+                line-height: 30px;
+            }
+            img {
+                border-radius: 50%;
+                width: 35px;
+                height: 35px;
+            }
         }
     }
 }
+.popup-group,
+.popup-person {
+    // display: block;
+    .block {
+        position: fixed;
+        border-radius: 9px;
+        top: 50%;
+        margin-top: -275px;
+        left: 50%;
+        margin-left: -250px;
+        width: 500px;
+        height: 550px;
+        padding: 50px;
+        text-align: right;
+        background-color: #fff;
+        p {
+            border-bottom: 1px solid $gray-color;
+            width: 30%;
+            float: right;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        input {
+            margin: 20px 0 20px 0;
+            direction: rtl;
+        }
+        .std {
+            direction: rtl;
+            border-bottom: 1px solid $gray-color;
+            float: right;
+            width: 100%;
+            input {
+                width: 13px;
+            }
+        }
+        .fa-search {
+            position: absolute;
+            top: 190px;
+            left: 83px;
+        }
+        .btn {
+            margin-top: 10px;
+            float: left;
+        }
+    }
+}
+.popup-person {
+    .block {
+        top: 50%;
+        margin-top: -175px;
+        left: 50%;
+        height: 350px;
+    }
+    input {
+        margin: 10px 0 4px 0 !important;
+        direction: rtl;
+    }
+}
+.invitation {
+    padding: 40px;
+    margin: 90px 0 20px 0;
+    text-align: center;
+    font-size: 30px;
+    p {
+        i {
+            padding: 15px;
+        }
+    }
 }

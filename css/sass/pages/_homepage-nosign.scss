@@ -154,7 +154,9 @@
         }
     }
 }
-.popup{
+.popup,
+.popup-group,
+.popup-person{
     display: none;
     position: fixed;
     top: 0;

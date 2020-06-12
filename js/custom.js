@@ -81,4 +81,48 @@ $(document).ready(function () {
                     $('#finish-popping').click(function(){
                         $(this).parent().parent().fadeOut(1000);
                     });
+        // for adding group student and single student popups 
+        $('.add-selection').click(function(){
+            // console.log('clicked');
+            console.log($(this).data('pop'));
+             $($(this).data('pop')).fadeIn(500);
+             $(this).addClass('btn-success');
+            $('.close').click(function(){
+                $(this).parent().parent().fadeOut(500);
+                $('.add-selection').removeClass('btn-success');
+            });
+        });                    
+        // for deleting the students from tables
+        $('.fa-minus-circle').click(function(){
+            console.log('clicked');
+            $(this).parent().parent().parent().fadeOut(500);
+            if($('.table .row:first-of-type').siblings().css("display") == 'none' ){
+                $('.table .row:first-of-type').css(
+                    'border-bottom' , '1px solid #000'
+                );
+            };
+        });
+        //for toggling the class active on the list and toggle the pages
+        $('.profile-lessons .ul li, .profile-lessons .col-9 .myset .set .col-6 .btn').click(function(){
+            console.log($(this).data('attr'));
+            $(this).addClass('active').siblings().removeClass('active');
+            $($(this).data('attr')).removeClass('d-none').fadeIn(500).siblings().addClass('d-none');
+        });
+        // for displaying the the payment in my profile lessons payment box
+        $('.profile-lessons .mywallat .chose-pay').click(function(){
+            $(this).parent().fadeOut(200);
+            $('.profile-lessons .mywallat .popup-group').removeClass('d-none').fadeIn(400);
+            $('.profile-lessons .mywallat .popup-group .btn').click(function(){
+                $(this).parent().fadeOut(200);
+                $('.profile-lessons .mywallat .payment-popup').removeClass('d-none').fadeIn(400); 
+            });
+        });
+        //for the personal edition
+        $('.profile-lessons .myset .set .btn').click(function(){
+            console.log($(this).data('attr'));
+            $($(this).data('attr')).removeClass('d-none').fadeIn(500);
+            $('.close').click(function(){
+                $(this).parent().parent().fadeOut(500);
+            });
+        });
 });
