@@ -1,10 +1,35 @@
-So far, I have finished the first four XDs from the first email. Currently, I'm working on "teacher file XD" almost finished. 
---- What'are the done pages for "teacher file"? 
-Basically, Accoording to the file order the first 9 rows are done or rather 29 pages for desings some page includes popups
-so, you must find the some pages implemented through its main page. 
-what are the pages name? 
-- All the home-pages 
-- Logins page 
-- Creating group class, add student, remove student, and sending an invitation. 
-- The drop-down menu taps which are lessons, records, wallet, and the settings.
-Today's date 6/12/2020
+Study Meet: 
+What are the pages which are ready? 
+According to the XDs, All the pages inside ( Hompage, profile, support page, sign up & sing in, teacher file, student, and my lessons) are done. For some pages mostly
+in the Teacher file XD, there are a bunch of popups and inner pages. 
+This requires a click on its parent button or section, for instance, inside my profile page there're pages for payment and lesson calculations. 
+For the  ( Hompage, profile, support page, and sign up & sing in) the sequence of the pages is required to monitor the user whether teacher or student to follow up 
+step by step in the sign, login processes. 
+The teacher management page - profile XD - it's compatible with the database for each teacher and depends on the website. 
+The website still can be enhanced more than the current version. 
+Teacher file XD there are sidebar which includes 
+- my lessons pages and its inner pages
+- my records and more inner pages can be added 
+- the bundle page for the general calculations 
+- Credit balance page where the teacher can moderate the balance 
+- Classes calculations where the teacher can check lesson by lesson calculation through applying filter mode
+- My wallet page contains the statistics and credit transfer pages
+My lesson XD 
+- Header list to traverse between education stages 
+- Sections contain courses for each stage 
+- Inner pop for course details 
+- Payment method 
+- Successful payment page
+Profile room XD
+- Login navbar 
+- Start the lesson page where the teacher can find the link and check the upcoming lessons 
+- Lessons page 
+- The class page where the lesson data stores in order to show the students needed details 
+- Invitation page to mark the students and start the class 
+- Creating room for a new class
+Support page XD
+- Small chat popups are available in order as shown in the XD
+- The features page in the background 
+Sign up XD
+- Step by step sign up pages
+Today's date 6/14/2020

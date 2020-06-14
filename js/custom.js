@@ -48,7 +48,7 @@ $(document).ready(function () {
         $($(this).data('click')).fadeToggle(600);
     });
     // for the popup page
-    $('#startLesson').click(function(){
+    $('#startLesson, fa-fliter').click(function(){
         console.log('clicked');
         $('.popup').fadeIn(500);
         $('.close').click(function(){
@@ -56,7 +56,8 @@ $(document).ready(function () {
         });
     });
     // for courses taps
-    $('.courses-section ul li').click(function(){
+    $('.courses-section ul li, .myprofile .list .ul li').click(function(){
+        console.log($(this).data('class'));
         $(this).addClass('active').siblings().removeClass('active');
         $($(this).data('class')).removeClass('d-none').fadeIn("slow").siblings().addClass('d-none');
     });
@@ -103,18 +104,18 @@ $(document).ready(function () {
             };
         });
         //for toggling the class active on the list and toggle the pages
-        $('.profile-lessons .ul li, .profile-lessons .col-9 .myset .set .col-6 .btn').click(function(){
+        $('.profile-lessons .ul li').click(function(){
             console.log($(this).data('attr'));
             $(this).addClass('active').siblings().removeClass('active');
             $($(this).data('attr')).removeClass('d-none').fadeIn(500).siblings().addClass('d-none');
         });
         // for displaying the the payment in my profile lessons payment box
-        $('.profile-lessons .mywallat .chose-pay').click(function(){
+        $('.profile-lessons .mywallat .chose-pay, .myprofile .col-6 .mywallat .chose-pay').click(function(){
             $(this).parent().fadeOut(200);
-            $('.profile-lessons .mywallat .popup-group').removeClass('d-none').fadeIn(400);
-            $('.profile-lessons .mywallat .popup-group .btn').click(function(){
+            $('.profile-lessons .mywallat .popup-group, .myprofile .col-6 .mywallat .popup-group ').removeClass('d-none').fadeIn(400);
+            $('.profile-lessons .mywallat .popup-group .btn, .myprofile .col-6 .mywallat .popup-group .btn').click(function(){
                 $(this).parent().fadeOut(200);
-                $('.profile-lessons .mywallat .payment-popup').removeClass('d-none').fadeIn(400); 
+                $('.profile-lessons .mywallat .payment-popup, .myprofile .col-6 .mywallat .payment-popup').removeClass('d-none').fadeIn(400); 
             });
         });
         //for the personal edition
@@ -125,4 +126,23 @@ $(document).ready(function () {
                 $(this).parent().parent().fadeOut(500);
             });
         });
+        // for showing the popup
+        $('.fa-question-circle , .fa-filter').click(function(){
+            $('.pop, .fliter').fadeToggle(500);
+            $('.close').click(function(){
+                $(this).parent().parent().fadeOut();
+            });
+        });
+        // for showing the calculations from the myprofile
+        $(' .myprofile .col-6 .classesBalance .block').click(function(){
+            console.log($(this).data('class'));
+            $(this).parent().parent().fadeOut(500);
+            $('.myprofile .col-6 .classesBalance .classes').removeClass('d-none').fadeIn(500);
+        });
+        $('.myprofile .col-6 .classesBalance .lesson ').click(function(){
+            console.log($(this).data('class'));
+            $(this).parent().parent().parent().fadeOut(500);
+            $('.myprofile .col-6 .classesBalance .class').removeClass('d-none').fadeIn(500);
+        });
+        
 });
