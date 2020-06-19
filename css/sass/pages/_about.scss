@@ -1,91 +1,145 @@
-.about-us{
+.about-us {
     height: 300px;
     background-image: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url('../images/banner.png');
-    .overlay{
+    background-image: url("../images/banner.png");
+    .overlay {
         text-align: right;
         color: #fff;
         padding: 50px;
-        h3{
-        font-size: 100px;
+        h3 {
+            font-size: 100px;
+            @media (max-width: 768px) {
+                font-size: 88px;
+                text-align: center;
+            }
         }
     }
 }
-.story,.compare{
+.story,
+.compare {
     padding: 100px;
-    .row{
+    @media (max-width: 768px) {
+        padding: 30px;
+        text-align: center;
+    }
+    .row {
         direction: rtl;
         text-align: right;
-        .btn{
+        @media (max-width: 768px) {
+            text-align: center;
+        }
+        .btn {
             background-color: $main-color;
             border-color: $main-color;
         }
-        img{
+        img {
             border-radius: 5px;
+            @media (max-width: 768px) {
+                margin: 10px 0 10px 0;
+                max-width: 100%;
+            }
         }
     }
 }
-.compare{
-            background-color: #F9F9F9;
-            h3{
-                margin-bottom: 30px;
-            span{
-                display: inline;
-                color:$main-color;
-            }
+.compare {
+    background-color: #f9f9f9;
+    h3 {
+        margin-bottom: 30px;
+        span {
+            display: inline;
+            color: $main-color;
         }
+    }
+    p {
+        // font-size: 30px;
+        @media (max-width: 768px) {
+            font-size: 15px;
+        }
+    }
 }
-.team{
-    background-color: #F9F9F9;
-    &>div{
+.team {
+    background-color: #f9f9f9;
+
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+    & > div {
         float: right;
         width: 50%;
         text-align: right;
-        img{
+
+        @media (max-width: 768px) {
+            width: 100%;
+        }
+        img {
             width: 100%;
         }
     }
-    .team-dsc{
+    .team-dsc {
         padding: 30px;
         direction: rtl;
+
+        @media (max-width: 768px) {
+            width: 100%;
+            text-align: center;
+        }
     }
 }
-.best-teachers{
+.best-teachers {
     padding: 50px;
     text-align: right;
     color: $main-color;
     margin: auto;
-    h4{
+    @media (max-width: 768px) {
+        padding: 10px;
+    }
+    h4 {
         font-size: 30px;
     }
-    .teacher{
+    .teacher {
         width: 25%;
         margin: 0;
         padding: 0;
         float: right;
-        margin-bottom: 100px ;
-        p{
+        margin-bottom: 100px;
+        img {
+            max-width: 90%;
+        }
+        p {
             font-size: 25px;
-            span{
+
+            @media (max-width: 768px) {
+                font-size: 12px;
+            }
+            span {
                 color: $gray-color;
                 font-size: 13px;
+                @media (max-width: 768px) {
+                    font-size: 10px;
+                }
             }
         }
     }
 }
-.ready{
+.ready {
     height: 350px;
     width: 100%;
-    background-image: url('../images/ready.png');
+    background-image: url("../images/ready.png");
     color: #fff;
-    .inside{
+    .inside {
         padding: 70px;
-        h4{
-            font-size: 30px;
+        @media  (max-width: 768px) {
+            padding: 0;
         }
-        .btn{
+        h4 {
+            font-size: 30px;
+            @media  (max-width: 768px) {
+                padding-top: 60px;
+            }
+        }
+        .btn {
             border-color: $main-color;
             background-color: $main-color;
         }

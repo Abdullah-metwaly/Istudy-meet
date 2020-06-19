@@ -19,6 +19,9 @@
   cursor: pointer;
   padding: 9px;
   display: inline; }
+@media (max-width: 768px) {
+  .courses-section .row ul li {
+    display: block; } }
 .courses-section .parent-all .course {
   margin-bottom: 20px; }
 .courses-section .parent-all .course .course-img {

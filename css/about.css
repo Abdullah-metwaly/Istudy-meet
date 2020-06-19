@@ -20,43 +20,74 @@
   padding: 50px; }
 .about-us .overlay h3 {
   font-size: 100px; }
+@media (max-width: 768px) {
+  .about-us .overlay h3 {
+    font-size: 88px;
+    text-align: center; } }
 
 .story, .compare {
   padding: 100px; }
+@media (max-width: 768px) {
+  .story, .compare {
+    padding: 30px;
+    text-align: center; } }
 .story .row, .compare .row {
   direction: rtl;
   text-align: right; }
+@media (max-width: 768px) {
+  .story .row, .compare .row {
+    text-align: center; } }
 .story .row .btn, .compare .row .btn {
   background-color: #159DD7;
   border-color: #159DD7; }
 .story .row img, .compare .row img {
   border-radius: 5px; }
+@media (max-width: 768px) {
+  .story .row img, .compare .row img {
+    margin: 10px 0 10px 0;
+    max-width: 100%; } }
 
 .compare {
-  background-color: #F9F9F9; }
+  background-color: #f9f9f9; }
 .compare h3 {
   margin-bottom: 30px; }
 .compare h3 span {
   display: inline;
   color: #159DD7; }
+@media (max-width: 768px) {
+  .compare p {
+    font-size: 15px; } }
 
 .team {
-  background-color: #F9F9F9; }
+  background-color: #f9f9f9; }
+@media (max-width: 768px) {
+  .team {
+    width: 100%; } }
 .team > div {
   float: right;
   width: 50%;
   text-align: right; }
+@media (max-width: 768px) {
+  .team > div {
+    width: 100%; } }
 .team > div img {
   width: 100%; }
 .team .team-dsc {
   padding: 30px;
   direction: rtl; }
+@media (max-width: 768px) {
+  .team .team-dsc {
+    width: 100%;
+    text-align: center; } }
 
 .best-teachers {
   padding: 50px;
   text-align: right;
   color: #159DD7;
   margin: auto; }
+@media (max-width: 768px) {
+  .best-teachers {
+    padding: 10px; } }
 .best-teachers h4 {
   font-size: 30px; }
 .best-teachers .teacher {
@@ -65,11 +96,19 @@
   padding: 0;
   float: right;
   margin-bottom: 100px; }
+.best-teachers .teacher img {
+  max-width: 90%; }
 .best-teachers .teacher p {
   font-size: 25px; }
+@media (max-width: 768px) {
+  .best-teachers .teacher p {
+    font-size: 12px; } }
 .best-teachers .teacher p span {
   color: #707070;
   font-size: 13px; }
+@media (max-width: 768px) {
+  .best-teachers .teacher p span {
+    font-size: 10px; } }
 
 .ready {
   height: 350px;
@@ -78,8 +117,14 @@
   color: #fff; }
 .ready .inside {
   padding: 70px; }
+@media (max-width: 768px) {
+  .ready .inside {
+    padding: 0; } }
 .ready .inside h4 {
   font-size: 30px; }
+@media (max-width: 768px) {
+  .ready .inside h4 {
+    padding-top: 60px; } }
 .ready .inside .btn {
   border-color: #159DD7;
   background-color: #159DD7; }

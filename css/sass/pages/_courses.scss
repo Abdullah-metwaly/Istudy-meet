@@ -11,6 +11,9 @@
                 cursor: pointer;
                 padding: 9px;
                 display: inline;
+                @media  (max-width: 768px) {
+                    display: block;
+                }
             }
         }
     }

@@ -10,6 +10,9 @@
 
 .price-plan, .annual-plan {
   padding: 100px; }
+@media (max-width: 768px) {
+  .price-plan, .annual-plan {
+    padding: 9px; } }
 .price-plan .container .row, .annual-plan .container .row {
   margin: auto;
   text-align: center; }
@@ -47,6 +50,9 @@
   background-color: #159DD7 !important; }
 .annual-plan .body {
   height: 400px; }
+@media (max-width: 768px) {
+  .annual-plan .body {
+    height: 323px; } }
 .annual-plan .body p:first-of-type {
   font-size: 25px; }
 .annual-plan .body p:last-of-type {
@@ -60,6 +66,9 @@
   margin: 20px 0 20px 0; }
 .annual-plan .body .ul {
   padding: 30px; }
+@media (max-width: 768px) {
+  .annual-plan .body .ul {
+    padding: 0; } }
 .annual-plan .body .ul li {
   padding: 5px;
   direction: rtl;
@@ -68,6 +77,11 @@
   width: 40%;
   font-weight: 500;
   border-bottom: 1px solid #CDCDCD; }
+@media (max-width: 768px) {
+  .annual-plan .body .ul li {
+    font-size: 12px;
+    padding: 0;
+    width: auto; } }
 .annual-plan .body .ul li i {
   color: #34AA44; }
 
