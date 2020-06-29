@@ -1,9 +1,16 @@
 .signIn {
+    .row{
+        &>div{
+            padding: 16px;
+            margin-bottom: 20px;
+        }
+    }
     .left-sec{
         h3{font-size: 40px;span{font-weight: normal;}}
         text-align: right;
         direction: rtl;
         color: #fff;
+        margin: auto;
     }
     .btn{
         color: #fff;
@@ -12,17 +19,44 @@
     .sign-block {
         height: 490px !important;
         width: 500px !important;
+        @media (max-width:1024px){
+            width: 424px !important;
+        }
         .row {
             .back {
                 width: 120px;
                 height: 120px;
+                margin: auto;
                 border-radius: 50%;
                 @extend.box-shadow;
+                @media (max-width:768px){
+                    width: 100px;
+                    height: 100px;
+                    display: flex;
+                }
+                @media (max-width:320px){
+                    width: 75px;
+                    height: 75px;
+                }
             }
             i {
                 line-height: 120px;
                 color: $main-color;
                 font-size: 70px;
+                @media (max-width:1024px){
+                    font-size: 40px;
+                }
+                @media (max-width:768px){
+                    margin: auto;
+                    font-size: 40px;
+                    width: 100px;
+                    line-height: 100px;
+                    height: 100px;
+                }
+                @media (max-width:320px){
+                   font-size: 33px;
+                   line-height: 80px;
+                }
             }
         }
     }

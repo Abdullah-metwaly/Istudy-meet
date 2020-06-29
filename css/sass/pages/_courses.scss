@@ -1,6 +1,9 @@
 .courses-section {
     .row {
         padding: 60px;
+        @media (max-width: 768px) {
+            padding: 38px;
+        }
         ul {
             margin: auto;
             .active {
@@ -11,7 +14,7 @@
                 cursor: pointer;
                 padding: 9px;
                 display: inline;
-                @media  (max-width: 768px) {
+                @media (max-width: 768px) {
                     display: block;
                 }
             }
@@ -25,6 +28,11 @@
                 width: 225px;
                 height: 150px;
                 background-image: url("../images/Clip.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+                @media (max-width: 1024px) {
+                    width: 100%;
+                }
                 .overlay {
                     opacity: 0;
                     transition: 0.5s ease;
@@ -52,7 +60,7 @@
 }
 
 .popup,
-.payment-popup{
+.payment-popup {
     display: none;
     position: fixed;
     top: 0;
@@ -72,6 +80,13 @@
         width: 500px;
         height: 550px;
         background-color: #fff;
+        @media (max-width: 768px) {
+            margin-top: -276px;
+            text-align: center;
+            margin-left: -167px;
+            width: 339px;
+            height: 508px;
+        }
         .close {
             position: absolute;
             cursor: pointer;
@@ -88,9 +103,21 @@
         }
     }
 }
+.popup{
+    img{
+        @media (max-width: 768px) {
+            margin: -54px;    
+            margin-bottom: 30px;
+        }
+        
+    }
+}
 .payment-popup {
     .container {
         direction: rtl;
+        @media (max-width: 768px) {
+            padding: 40px;
+        }
         .form-control {
             margin-bottom: 10px;
         }
@@ -105,7 +132,6 @@
         }
         p {
             font-size: 10px;
-          
         }
         select {
             width: 100%;
@@ -120,8 +146,18 @@
         h1 {
             font-size: 19px;
             line-height: 45px;
+            @media (max-width: 768px) {
+                font-size: 16px;
+                line-height: 42px;
+            }
         }
-        p{
+        img{
+            @media (max-width: 768px) {
+                width: 140px;
+
+            }
+        }
+        p {
             &:last-of-type {
                 color: #34ab44;
             }
@@ -135,14 +171,19 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba($color: #ffffff, $alpha: 1);overflow: hidden;
+    background-color: rgba($color: #ffffff, $alpha: 1);
+    overflow: hidden;
     z-index: 99999999;
-    body{
+    body {
         overflow: hidden;
     }
-    .container{
+    .container {
         position: fixed;
         top: 25%;
         left: 9%;
+        @media (max-width: 768px) {
+            top: 35%;
+            left: 0;
+        }
     }
 }

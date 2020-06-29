@@ -1,8 +1,11 @@
 body{height: 120vh;}
 .signIn {
     .sign-block {
-        height: 600px !important;
-        width: 500px !important;
+        height: 617px !important;
+        width: 430px !important;
+        @media (max-width: 375px) {
+            height: 695px !important;
+        }
         h5 {
             color: $main-color;
             img {
@@ -17,19 +20,29 @@ body{height: 120vh;}
                 height: 120px;
                 border-radius: 50%;
                 @extend.box-shadow;
+                @media (max-width: 768px) {
+                    width: 90px;
+                    height: 90px;
+                }
             }
             i {
                 line-height: 120px;
                 color: $main-color;
                 font-size: 70px;
+                @media (max-width: 768px) {
+                    line-height: 90px;
+                    font-size: 41px;
+                }
             }
         }
         label {
             float: right;
+            margin-bottom: 12px;
         }
         input {
-            width: 80%;
+            width: 95%;
             float: right;
+            margin-bottom: 11px;
         }
         .laws {
             padding: 10px;

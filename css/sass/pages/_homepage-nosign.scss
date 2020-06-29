@@ -1,10 +1,16 @@
 .container {
     direction: rtl;
     text-align: right;
+    @media (max-width: 768px) {
+        // max-width: 80%;
+    }
     .teacher-info {
         direction: rtl;
         h2 {
             width: 27%;
+            @media (max-width: 768px) {
+                width: 87%;
+            }
             .membership {
                 margin-top: 13px;
                 font-size: 12px;
@@ -47,25 +53,34 @@
             border-radius: 3px 0 0 3px;
             margin-left: 10px;
         }
-        button{
+        button {
             margin-top: -4px;
             border-radius: 5px;
-            background-color: #F7F8FA;
-            
-            i{
+            background-color: #f7f8fa;
+
+            i {
                 cursor: pointer;
                 font-size: 18px;
                 padding: 4px;
             }
         }
-        .btn{margin-top: -4px;}
+        .btn-success {
+            margin-top: -5px;
+           
+        }
+        button{
+            @media (max-width:768px) {
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+        }
     }
     .lessons {
         // position: relative;
         padding: 20px;
         cursor: pointer;
-        .row{
-            &>div{
+        .row {
+            & > div {
                 margin-left: 20px;
             }
             .lesson {
@@ -89,12 +104,12 @@
                     padding: 10px;
                     border: 1px solid $gray-color;
                     height: 140px;
-                    &:hover{
+                    &:hover {
                         border: 1px solid red;
                     }
                     p {
                         margin-top: 26px;
-    
+
                         span {
                             opacity: 0.8;
                             color: $gray-color;
@@ -115,9 +130,13 @@
                         left: 9px;
                     }
                 }
-              
             }
-            .block1 , .block2 , .block3 , .block4 , .block5 , .block6 {
+            .block1,
+            .block2,
+            .block3,
+            .block4,
+            .block5,
+            .block6 {
                 z-index: 9;
                 display: none;
                 right: -24px;
@@ -127,20 +146,20 @@
                 box-shadow: 0px 0px 15px 3px #acaeb5;
                 background-color: #fff;
                 width: 175px;
-                ul{
+                ul {
                     padding: 3px;
                     color: $gray-color;
-                    li{
+                    li {
                         padding: 3px 0 4px 0;
-                    .btn{
-                        text-align: right;
-                        background-color: $main-color;
-                        width: 90%;
+                        .btn {
+                            text-align: right;
+                            background-color: $main-color;
+                            width: 90%;
+                        }
                     }
                 }
-                }
                 &::after {
-                    content: ' ';
+                    content: " ";
                     position: absolute;
                     top: 18px;
                     left: -18px;
@@ -156,7 +175,7 @@
 }
 .popup,
 .popup-group,
-.popup-person{
+.popup-person {
     display: none;
     position: fixed;
     top: 0;
@@ -164,7 +183,7 @@
     width: 100%;
     height: 100%;
     background-color: rgba($color: #979797, $alpha: 0.5);
-    .container{
+    .container {
         position: fixed;
         border-radius: 9px;
         top: 50%;
@@ -174,30 +193,44 @@
         width: 500px;
         height: 550px;
         background-color: #fff;
-        .close{
+        @media (max-width: 768px) {
+            margin-left: -140px;
+            width: 289px;
+            height: 609px;
+        }
+        .close {
             position: absolute;
             cursor: pointer;
             top: 10px;
             left: 10px;
         }
-        h5{
+        h5 {
             padding: 18px;
         }
-        .form-control{
+        .form-control {
             width: 95%;
+            @media (max-width: 768px) {
+                width: 100%;
+            }
         }
-        input{
+        input {
             width: 90%;
             margin-bottom: 10px;
             border-radius: 5px;
             border: 1px solid $gray-color;
+            @media (max-width: 768px) {
+                width: 91%;
+            }
         }
-        .students-number{
+        .students-number {
             width: 35%;
+            @media (max-width: 768px) {
+                width: 71%;
+            }
         }
-        .form{
+        .form {
             padding: 10px;
-            &>div{
+            & > div {
                 border-radius: 5px;
                 width: 100%;
                 height: 40px;
@@ -205,13 +238,21 @@
                 line-height: 20px;
                 padding: 5px;
                 border: 1px solid $gray-color;
+                @media (max-width: 768px) {
+                    width: 110%;
+                    line-height: 13px;
+                    // font-size: 10px;
+                }
+                .col-1{
+                    padding: 0;
+                }
             }
-            input[type=checkbox]{
+            input[type="checkbox"] {
                 height: 0;
                 width: 0;
                 visibility: none;
             }
-            
+
             label {
                 margin-top: -8px;
                 cursor: pointer;
@@ -222,33 +263,32 @@
                 display: block;
                 border-radius: 100px;
                 position: relative;
-            &:after {
-                content: '';
-                position: absolute;
-                top: 5px;
-                left: 5px;
-                width: 15px;
-                height: 15px;
-                border-radius:50%;
-                background: #fff;
-                border-radius: 90px;
-                transition: 0.3s;
+              
+                &:after {
+                    content: "";
+                    position: absolute;
+                    top: 5px;
+                    left: 5px;
+                    width: 15px;
+                    height: 15px;
+                    border-radius: 50%;
+                    background: #fff;
+                    border-radius: 90px;
+                    transition: 0.3s;
+                }
             }
-        }
             input:checked + label {
-                background: #21D226;
+                background: #21d226;
             }
-            
+
             input:checked + label:after {
                 left: calc(100% - 5px);
                 transform: translateX(-100%);
             }
-            
+
             label:active:after {
                 width: 130px;
             }
-            
-            
         }
     }
 }

@@ -1,6 +1,4 @@
-// body {
-//     height: 10000px;
-// }
+
 .head {
     padding: 40px;
     .carousel-indicators {
@@ -13,6 +11,9 @@
         background-color: $gray-color;
     }
     .carousel-item {
+        @media (max-width: 768px) {
+        //    display: flex;
+        }
         & > div {
             float: right;
         }
@@ -20,6 +21,10 @@
     .left-carousel {
         padding: 40px 80px 40px 80px;
         text-align: right;
+        @media (max-width: 768px) {
+            
+    padding: 18px 16px 49px 0;
+        }
         h3 {
             span {
                 color: #747474;
@@ -32,6 +37,10 @@
     .img-responsive {
         width: 320px;
         height: 320px;
+        @media (max-width: 768px) {
+            width: 225px;
+            height: 225px;
+        }
     }
 }
 
@@ -41,16 +50,28 @@
     height: 80px;
     margin-top: -63px;
     opacity: 0.8;
+    @media (max-width: 768px){
+        height: 117px;
+    }
     .row {
         direction: rtl;
         display: table-cell;
         padding-left: 140px;
+        @media (max-width: 768px){
+            padding-left: 0;
+        }
         & > div {
             font-weight: bold;
             color: #fff;
             padding: 10px 40px 20px 10px;
             text-align: right;
             float: right;
+            p{
+                @media (max-width: 768px){
+                 font-size: 13px;
+                }
+    
+            }
         }
         li {
             list-style: none;
@@ -92,6 +113,10 @@
 }
 .meet-features {
     padding: 60px;
+    @media (max-width: 768px) {
+        padding: 0;
+        margin-bottom: 80px;
+    }
     .col-md-4 {
         margin: 30px 0 30px 0;
     }
@@ -115,6 +140,9 @@
         margin-top: -20px;
         background-color: #fff;
         @extend .box-shadow;
+        @media (max-width: 768px) {
+            height: 480px;
+         }
         &:hover {
             border: 2px solid;
             border-color: $main-color;

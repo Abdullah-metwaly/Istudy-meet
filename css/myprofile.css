@@ -5,7 +5,6 @@
 
 .overlay {
   width: 100%;
-  height: 100%;
   background-color: rgba(21, 157, 215, 0.7); }
 
 .myprofile {
@@ -16,6 +15,9 @@
   padding: 20px;
   box-shadow: -4px 0px 5px 0px #e2e5ed;
   border-left: 1px solid #f6f6f6; }
+@media (min-width: 1024px) {
+  .myprofile .shadow {
+    height: 100vh; } }
 .myprofile .shadow .up {
   padding-bottom: 30px;
   border-bottom: 1px solid #f6f6f6; }
@@ -43,8 +45,12 @@
 .myprofile .shadow .bundle .btn-info {
   padding: 5px 90px 5px 40px;
   float: left;
+  width: 96%;
   background-color: #102770;
   border-color: #102770; }
+@media (max-width: 1024px) {
+  .myprofile .shadow .bundle .btn-info {
+    padding: 0 89px 5px 40px; } }
 .myprofile .shadow .bundle .bt {
   position: absolute;
   right: 2px;
@@ -57,6 +63,9 @@
   color: #102770;
   border: 1px solid #102770;
   background-color: #fff; }
+@media (max-width: 1024px) {
+  .myprofile .shadow .bundle .bt {
+    top: 25px; } }
 .myprofile .shadow .bundle .bt i {
   width: 71%;
   height: 71%;
@@ -107,26 +116,29 @@
   margin-top: 30px; }
 .myprofile .shadow .nextlessons .disc {
   margin-top: 33px; }
+@media (max-width: 1024px) {
+  .myprofile .shadow .nextlessons .disc {
+    margin-right: 12px; } }
 .myprofile .shadow .nextlessons .disc .h {
   font-size: 13px;
   font-weight: bold; }
 .myprofile .shadow .nextlessons .disc span {
   padding: 0 10px 0 10px;
   color: #707070; }
-.myprofile .col-6 {
+.myprofile .col-xl-6 {
   padding: 30px;
   margin: 0; }
-.myprofile .col-6 h5 {
+.myprofile .col-xl-6 h5 {
   margin: 0;
   padding-right: 30px;
   padding-bottom: 10px;
   border-bottom: 1px solid #707070; }
-.myprofile .col-6 .lesson {
+.myprofile .col-xl-6 .lesson {
   cursor: pointer;
   position: relative;
   width: 200px;
   margin-bottom: 6px; }
-.myprofile .col-6 .lesson .order p {
+.myprofile .col-xl-6 .lesson .order p {
   background-color: #707070;
   width: 50px;
   height: 50px;
@@ -138,19 +150,19 @@
   margin-right: 10px;
   position: relative;
   margin-bottom: -26px; }
-.myprofile .col-6 .lesson .inner {
+.myprofile .col-xl-6 .lesson .inner {
   width: 93%;
   padding: 10px;
   border: 1px solid #707070;
   height: 140px; }
-.myprofile .col-6 .lesson .inner p {
+.myprofile .col-xl-6 .lesson .inner p {
   margin-top: 26px; }
-.myprofile .col-6 .lesson .inner p span {
+.myprofile .col-xl-6 .lesson .inner p span {
   opacity: 0.8;
   color: #707070; }
-.myprofile .col-6 .lesson:hover .inner {
+.myprofile .col-xl-6 .lesson:hover .inner {
   border: 1px solid #159DD7; }
-.myprofile .col-6 .lesson:hover .active {
+.myprofile .col-xl-6 .lesson:hover .active {
   background-color: #159DD7; }
 .myprofile .annual-plan .progress {
   direction: rtl;
@@ -161,6 +173,13 @@
   line-height: 41px;
   padding-right: 69px;
   font-size: 16px; }
+@media (max-width: 1024px) {
+  .myprofile .annual-plan .progress p {
+    line-height: 47px;
+    padding-right: 10px;
+    font-size: 15px; } }
+.myprofile .annual-plan .row {
+  font-size: 12px; }
 .myprofile .annual-plan .head {
   text-align: center;
   padding: 5px;
@@ -171,6 +190,9 @@
   height: 400px;
   border: 1px solid #747474;
   box-shadow: 1px 4px 10px 0 #e2e5ed; }
+@media (max-width: 768px) {
+  .myprofile .annual-plan .body {
+    height: 344px; } }
 .myprofile .annual-plan .body p:first-of-type {
   font-size: 25px; }
 .myprofile .annual-plan .body p:last-of-type {
@@ -178,6 +200,9 @@
   margin: auto;
   padding-bottom: 5px;
   width: 30%; }
+@media (max-width: 768px) {
+  .myprofile .annual-plan .body p:last-of-type {
+    width: 35%; } }
 .myprofile .annual-plan .body .btn {
   color: #747474;
   background-color: #cdcdcd;
@@ -185,6 +210,9 @@
   border-color: #cdcdcd; }
 .myprofile .annual-plan .body .ul {
   padding: 30px; }
+@media (max-width: 768px) {
+  .myprofile .annual-plan .body .ul {
+    padding: 3px; } }
 .myprofile .annual-plan .body .ul li {
   padding: 5px;
   direction: rtl;
@@ -210,7 +238,7 @@
   color: #707070; }
 .myprofile .classesBalance .row {
   position: relative; }
-.myprofile .classesBalance .row .col-3 .block {
+.myprofile .classesBalance .row .col-xl-3 .block {
   cursor: pointer;
   text-align: right;
   line-height: 110px;
@@ -220,7 +248,7 @@
   margin: 10px;
   height: 130px;
   border: 1px solid #747474; }
-.myprofile .classesBalance .row .col-3 .block:hover {
+.myprofile .classesBalance .row .col-xl-3 .block:hover {
   color: #159DD7;
   border-color: #159DD7; }
 .myprofile .classesBalance .row:last-of-type p i {
@@ -283,6 +311,9 @@
   padding: 10px;
   border-radius: 12px;
   box-shadow: 0px 0px 5px 2px #eaedf3; }
+@media (max-width: 768px) {
+  .myprofile .mybalance .row .square, .myprofile .mywallat .row .square {
+    width: 100%; } }
 .myprofile .mybalance .row .square p, .myprofile .mywallat .row .square p {
   float: right;
   line-height: 57px; }
@@ -301,14 +332,24 @@
   height: 500px;
   font-size: 13px;
   width: 134%; }
+@media (max-width: 768px) {
+  .myprofile .mybalance .cont, .myprofile .mywallat .cont {
+    width: 100%; } }
 .myprofile .mybalance .cont .row, .myprofile .mywallat .cont .row {
   border-bottom: 1px solid #e2e5ed;
   padding: 25px;
   margin-right: 0;
   width: 100%; }
+@media (max-width: 768px) {
+  .myprofile .mybalance .cont .row, .myprofile .mywallat .cont .row {
+    font-size: 14px;
+    padding: 16px; } }
 .myprofile .mybalance .cont .row .col-3, .myprofile .mywallat .cont .row .col-3 {
   line-height: 1px;
   text-align: center; }
+@media (max-width: 768px) {
+  .myprofile .mybalance .cont .row .col-3, .myprofile .mywallat .cont .row .col-3 {
+    line-height: 14px; } }
 .myprofile .mywallat .popup-group .block {
   border-radius: 9px;
   padding: 10px;
@@ -403,11 +444,33 @@
   position: fixed;
   top: 25%;
   left: 9%; }
+.myprofile .open {
+  left: 0; }
 
 .list {
   margin-right: 110px;
   padding: 20px;
   border-right: 1px solid #707070; }
+@media (max-width: 1024px) {
+  .list {
+    position: fixed;
+    background-color: #fff;
+    width: 234px;
+    left: -234px;
+    height: 100vh; } }
+.list .toggler {
+  cursor: pointer;
+  position: absolute;
+  left: 253px;
+  width: 30px;
+  top: 60px;
+  color: #ffffff;
+  transition: 0.5s;
+  border-color: transparent; }
+.list .toggler i {
+  background-color: #102770;
+  padding: 16px;
+  font-size: 25px; }
 .list ul .active {
   color: #159DD7;
   border-color: #159DD7; }
@@ -441,6 +504,10 @@
   width: 500px;
   height: 350px;
   background-color: #fff; }
+@media (max-width: 1024px) {
+  .fliter .container {
+    margin-left: -137px;
+    width: 278px; } }
 .fliter .container .close {
   position: absolute;
   cursor: pointer;
@@ -459,5 +526,9 @@
   float: left;
   margin: 10px 10px 10px 10px;
   width: 100px; }
+@media (max-width: 1024px) {
+  .fliter .container .btn {
+    float: none;
+    margin: auto; } }
 
 /*# sourceMappingURL=myprofile.css.map */

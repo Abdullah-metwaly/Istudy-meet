@@ -5,40 +5,39 @@
 
 .overlay {
   width: 100%;
-  height: 100%;
   background-color: rgba(21, 157, 215, 0.7); }
 
 .profile-lessons {
   padding: 50px;
   direction: rtl;
   text-align: right; }
-.profile-lessons .col-3 h4 i {
+.profile-lessons .col-xl-3 h4 i {
   color: #159DD7; }
-.profile-lessons .col-3 p {
+.profile-lessons .col-xl-3 p {
   color: #707070; }
-.profile-lessons .col-3 .ul {
+.profile-lessons .col-xl-3 .ul {
   width: 70%;
   border: 1px solid #e2e5ed;
   padding: 0;
   border-radius: 10px; }
-.profile-lessons .col-3 .ul .active {
+.profile-lessons .col-xl-3 .ul .active {
   cursor: pointer;
   background-color: #159DD7;
   border-color: #159DD7;
   color: #fff; }
-.profile-lessons .col-3 .ul .active i {
+.profile-lessons .col-xl-3 .ul .active i {
   color: #fff; }
-.profile-lessons .col-3 .ul li {
+.profile-lessons .col-xl-3 .ul li {
   cursor: pointer;
   padding: 10px;
   border-top: 1px solid #e2e5ed; }
-.profile-lessons .col-3 .ul li i {
+.profile-lessons .col-xl-3 .ul li i {
   color: #159DD7; }
-.profile-lessons .col-3 .ul li:hover {
+.profile-lessons .col-xl-3 .ul li:hover {
   background-color: #159DD7;
   border-color: #159DD7;
   color: #fff; }
-.profile-lessons .col-3 .ul li:hover i {
+.profile-lessons .col-xl-3 .ul li:hover i {
   color: #fff; }
 .profile-lessons .lesson {
   cursor: pointer;

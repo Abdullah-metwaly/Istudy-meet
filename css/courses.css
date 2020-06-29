@@ -5,11 +5,13 @@
 
 .overlay {
   width: 100%;
-  height: 100%;
   background-color: rgba(21, 157, 215, 0.7); }
 
 .courses-section .row {
   padding: 60px; }
+@media (max-width: 768px) {
+  .courses-section .row {
+    padding: 38px; } }
 .courses-section .row ul {
   margin: auto; }
 .courses-section .row ul .active {
@@ -27,7 +29,12 @@
 .courses-section .parent-all .course .course-img {
   width: 225px;
   height: 150px;
-  background-image: url("../images/Clip.png"); }
+  background-image: url("../images/Clip.png");
+  background-repeat: no-repeat;
+  background-size: cover; }
+@media (max-width: 1024px) {
+  .courses-section .parent-all .course .course-img {
+    width: 100%; } }
 .courses-section .parent-all .course .course-img .overlay {
   opacity: 0;
   transition: 0.5s ease;
@@ -65,6 +72,13 @@
   width: 500px;
   height: 550px;
   background-color: #fff; }
+@media (max-width: 768px) {
+  .popup .container, .payment-popup .container {
+    margin-top: -276px;
+    text-align: center;
+    margin-left: -167px;
+    width: 339px;
+    height: 508px; } }
 .popup .container .close, .payment-popup .container .close {
   position: absolute;
   cursor: pointer;
@@ -77,8 +91,16 @@
 .popup .container p, .payment-popup .container p {
   text-align: right; }
 
+@media (max-width: 768px) {
+  .popup img {
+    margin: -54px;
+    margin-bottom: 30px; } }
+
 .payment-popup .container {
   direction: rtl; }
+@media (max-width: 768px) {
+  .payment-popup .container {
+    padding: 40px; } }
 .payment-popup .container .form-control {
   margin-bottom: 10px; }
 .payment-popup .container input {
@@ -101,6 +123,13 @@
 .payment-popup .container h1 {
   font-size: 19px;
   line-height: 45px; }
+@media (max-width: 768px) {
+  .payment-popup .container h1 {
+    font-size: 16px;
+    line-height: 42px; } }
+@media (max-width: 768px) {
+  .payment-popup .container img {
+    width: 140px; } }
 .payment-popup .container p:last-of-type {
   color: #34ab44; }
 
@@ -120,5 +149,9 @@
   position: fixed;
   top: 25%;
   left: 9%; }
+@media (max-width: 768px) {
+  .finish-popup .container {
+    top: 35%;
+    left: 0; } }
 
 /*# sourceMappingURL=courses.css.map */

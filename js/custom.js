@@ -144,5 +144,9 @@ $(document).ready(function () {
             $(this).parent().parent().parent().fadeOut(500);
             $('.myprofile .col-6 .classesBalance .class').removeClass('d-none').fadeIn(500);
         });
-        
+        // toggler menu in the responsive designs 
+        $(".myprofile .toggler").click(function(){
+            $(".myprofile .toggler i").toggleClass("fa-bars fa-times");
+            $(".myprofile .list").toggleClass("open");
+        });
 });

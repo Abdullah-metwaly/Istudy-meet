@@ -5,15 +5,17 @@
 
 .overlay {
   width: 100%;
-  height: 100%;
   background-color: rgba(21, 157, 215, 0.7); }
 
 body {
   height: 120vh; }
 
 .signIn .sign-block {
-  height: 600px !important;
-  width: 500px !important; }
+  height: 617px !important;
+  width: 430px !important; }
+@media (max-width: 375px) {
+  .signIn .sign-block {
+    height: 695px !important; } }
 .signIn .sign-block h5 {
   color: #159DD7; }
 .signIn .sign-block h5 img {
@@ -26,15 +28,25 @@ body {
   width: 120px;
   height: 120px;
   border-radius: 50%; }
+@media (max-width: 768px) {
+  .signIn .sign-block .row .back {
+    width: 90px;
+    height: 90px; } }
 .signIn .sign-block .row i {
   line-height: 120px;
   color: #159DD7;
   font-size: 70px; }
+@media (max-width: 768px) {
+  .signIn .sign-block .row i {
+    line-height: 90px;
+    font-size: 41px; } }
 .signIn .sign-block label {
-  float: right; }
+  float: right;
+  margin-bottom: 12px; }
 .signIn .sign-block input {
-  width: 80%;
-  float: right; }
+  width: 95%;
+  float: right;
+  margin-bottom: 11px; }
 .signIn .sign-block .laws {
   padding: 10px; }
 .signIn .sign-block .laws input {

@@ -1,14 +1,21 @@
-body {
-    height: 125vh;
-}
+// body {
+//     height: 125vh;
+// }
 .signIn {
     .sign-block {
         padding: 0 !important;
-        height: 640px !important;
+        height: 656px !important;
         width: 500px !important;
+        @media (max-width:1024px) {
+            width: 435px !important;
+        }
+        // @media (max-width:768px) {
+        //     width: 245px !important;
+        // }
         .option {
             a {
                 line-height: 50px;
+                width: 100%;
             }
             .active {
                 margin: 0;
@@ -36,19 +43,29 @@ body {
                 height: 120px;
                 border-radius: 50%;
                 @extend.box-shadow;
+                @media (max-width:768px) {
+                    width: 80px;
+                    height: 80px;
+                 }
             }
             i {
                 line-height: 120px;
                 color: $main-color;
                 font-size: 70px;
+                @media (max-width:768px) {
+                    line-height: 91px;
+                    
+                    font-size: 34px;
+                 }
             }
         }
         label {
             margin-right: 30px;
+            margin-bottom: 12px;
             float: right;
         }
         input {
-            margin-right: 30px;
+            margin-right: 23px;
             width: 80%;
             float: right;
         }

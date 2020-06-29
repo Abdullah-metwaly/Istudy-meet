@@ -5,7 +5,6 @@
 
 .overlay {
   width: 100%;
-  height: 100%;
   background-color: rgba(21, 157, 215, 0.7); }
 
 .head {
@@ -22,6 +21,9 @@
 .head .left-carousel {
   padding: 40px 80px 40px 80px;
   text-align: right; }
+@media (max-width: 768px) {
+  .head .left-carousel {
+    padding: 18px 16px 49px 0; } }
 .head .left-carousel h3 span {
   color: #747474; }
 .head .left-carousel p {
@@ -29,6 +31,10 @@
 .head .img-responsive {
   width: 320px;
   height: 320px; }
+@media (max-width: 768px) {
+  .head .img-responsive {
+    width: 225px;
+    height: 225px; } }
 
 .lower-carousel {
   padding: 20px 0 80px 0;
@@ -36,16 +42,25 @@
   height: 80px;
   margin-top: -63px;
   opacity: 0.8; }
+@media (max-width: 768px) {
+  .lower-carousel {
+    height: 117px; } }
 .lower-carousel .row {
   direction: rtl;
   display: table-cell;
   padding-left: 140px; }
+@media (max-width: 768px) {
+  .lower-carousel .row {
+    padding-left: 0; } }
 .lower-carousel .row > div {
   font-weight: bold;
   color: #fff;
   padding: 10px 40px 20px 10px;
   text-align: right;
   float: right; }
+@media (max-width: 768px) {
+  .lower-carousel .row > div p {
+    font-size: 13px; } }
 .lower-carousel .row li {
   list-style: none;
   font-size: 30px; }
@@ -79,6 +94,10 @@
 
 .meet-features {
   padding: 60px; }
+@media (max-width: 768px) {
+  .meet-features {
+    padding: 0;
+    margin-bottom: 80px; } }
 .meet-features .col-md-4 {
   margin: 30px 0 30px 0; }
 .meet-features .img {
@@ -98,6 +117,9 @@
   padding: 40px;
   margin-top: -20px;
   background-color: #fff; }
+@media (max-width: 768px) {
+  .meet-features .prag {
+    height: 480px; } }
 .meet-features .prag:hover {
   border: 2px solid;
   border-color: #159DD7; }

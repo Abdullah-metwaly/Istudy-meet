@@ -5,7 +5,6 @@
 
 .overlay {
   width: 100%;
-  height: 100%;
   background-color: rgba(21, 157, 215, 0.7); }
 
 .container {
@@ -16,6 +15,9 @@
 .container .teacher-info h2 {
   width: 27%;
   color: #159DD7; }
+@media (max-width: 768px) {
+  .container .teacher-info h2 {
+    width: 87%; } }
 .container .teacher-info h2 .membership {
   margin-top: 13px;
   font-size: 12px;
@@ -51,13 +53,17 @@
 .container .start-lesson button {
   margin-top: -4px;
   border-radius: 5px;
-  background-color: #F7F8FA; }
+  background-color: #f7f8fa; }
 .container .start-lesson button i {
   cursor: pointer;
   font-size: 18px;
   padding: 4px; }
-.container .start-lesson .btn {
-  margin-top: -4px; }
+.container .start-lesson .btn-success {
+  margin-top: -5px; }
+@media (max-width: 768px) {
+  .container .start-lesson button {
+    margin-top: 10px;
+    margin-bottom: 10px; } }
 .container .lessons {
   padding: 20px;
   cursor: pointer; }
@@ -121,7 +127,7 @@
   background-color: #159DD7;
   width: 90%; }
 .container .lessons .row .block1::after, .container .lessons .row .block2::after, .container .lessons .row .block3::after, .container .lessons .row .block4::after, .container .lessons .row .block5::after, .container .lessons .row .block6::after {
-  content: ' ';
+  content: " ";
   position: absolute;
   top: 18px;
   left: -18px;
@@ -149,6 +155,11 @@
   width: 500px;
   height: 550px;
   background-color: #fff; }
+@media (max-width: 768px) {
+  .popup .container, .popup-group .container, .popup-person .container {
+    margin-left: -140px;
+    width: 289px;
+    height: 609px; } }
 .popup .container .close, .popup-group .container .close, .popup-person .container .close {
   position: absolute;
   cursor: pointer;
@@ -158,13 +169,22 @@
   padding: 18px; }
 .popup .container .form-control, .popup-group .container .form-control, .popup-person .container .form-control {
   width: 95%; }
+@media (max-width: 768px) {
+  .popup .container .form-control, .popup-group .container .form-control, .popup-person .container .form-control {
+    width: 100%; } }
 .popup .container input, .popup-group .container input, .popup-person .container input {
   width: 90%;
   margin-bottom: 10px;
   border-radius: 5px;
   border: 1px solid #707070; }
+@media (max-width: 768px) {
+  .popup .container input, .popup-group .container input, .popup-person .container input {
+    width: 91%; } }
 .popup .container .students-number, .popup-group .container .students-number, .popup-person .container .students-number {
   width: 35%; }
+@media (max-width: 768px) {
+  .popup .container .students-number, .popup-group .container .students-number, .popup-person .container .students-number {
+    width: 71%; } }
 .popup .container .form, .popup-group .container .form, .popup-person .container .form {
   padding: 10px; }
 .popup .container .form > div, .popup-group .container .form > div, .popup-person .container .form > div {
@@ -175,7 +195,13 @@
   line-height: 20px;
   padding: 5px;
   border: 1px solid #707070; }
-.popup .container .form input[type=checkbox], .popup-group .container .form input[type=checkbox], .popup-person .container .form input[type=checkbox] {
+@media (max-width: 768px) {
+  .popup .container .form > div, .popup-group .container .form > div, .popup-person .container .form > div {
+    width: 110%;
+    line-height: 13px; } }
+.popup .container .form > div .col-1, .popup-group .container .form > div .col-1, .popup-person .container .form > div .col-1 {
+  padding: 0; }
+.popup .container .form input[type="checkbox"], .popup-group .container .form input[type="checkbox"], .popup-person .container .form input[type="checkbox"] {
   height: 0;
   width: 0;
   visibility: none; }
@@ -190,7 +216,7 @@
   border-radius: 100px;
   position: relative; }
 .popup .container .form label:after, .popup-group .container .form label:after, .popup-person .container .form label:after {
-  content: '';
+  content: "";
   position: absolute;
   top: 5px;
   left: 5px;
@@ -201,7 +227,7 @@
   border-radius: 90px;
   transition: 0.3s; }
 .popup .container .form input:checked + label, .popup-group .container .form input:checked + label, .popup-person .container .form input:checked + label {
-  background: #21D226; }
+  background: #21d226; }
 .popup .container .form input:checked + label:after, .popup-group .container .form input:checked + label:after, .popup-person .container .form input:checked + label:after {
   left: calc(100% - 5px);
   transform: translateX(-100%); }
