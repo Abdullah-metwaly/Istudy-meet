@@ -20,6 +20,9 @@
   border: 1px solid #e2e5ed;
   padding: 0;
   border-radius: 10px; }
+@media (max-width: 1024px) {
+  .profile-lessons .col-xl-3 .ul {
+    width: 100%; } }
 .profile-lessons .col-xl-3 .ul .active {
   cursor: pointer;
   background-color: #159DD7;
@@ -29,6 +32,7 @@
   color: #fff; }
 .profile-lessons .col-xl-3 .ul li {
   cursor: pointer;
+  font-size: 14px;
   padding: 10px;
   border-top: 1px solid #e2e5ed; }
 .profile-lessons .col-xl-3 .ul li i {
@@ -77,6 +81,9 @@
   padding: 10px;
   border-radius: 12px;
   box-shadow: 0px 0px 5px 2px #eaedf3; }
+@media (max-width: 1024px) {
+  .profile-lessons .mywallat .row .square {
+    width: 106%; } }
 .profile-lessons .mywallat .row .square p {
   float: right;
   line-height: 57px; }
@@ -91,6 +98,10 @@
   box-shadow: 0px 0px 5px 2px #eaedf3;
   text-align: right;
   background-color: #fff; }
+@media (max-width: 1024px) {
+  .profile-lessons .mywallat .row .popup-group .block {
+    height: 450px;
+    margin-bottom: 15px; } }
 .profile-lessons .mywallat .row .popup-group .block p {
   border-bottom: 1px solid #707070;
   width: 30%;
@@ -123,6 +134,9 @@
   padding: 9px;
   border-radius: 9px;
   box-shadow: 0px 0px 5px 2px #eaedf3; }
+@media (max-width: 1024px) {
+  .profile-lessons .mywallat .row .payment-popup {
+    margin-bottom: 15px; } }
 .profile-lessons .mywallat .row .payment-popup .container input {
   margin-bottom: 10px; }
 .profile-lessons .mywallat .row .payment-popup .container input[type="number"] {
@@ -143,12 +157,19 @@
   border-color: #e2e5ed; }
 .profile-lessons .mywallat .row .payment-popup .container h4 {
   font-size: 19px; }
+@media (max-width: 1024px) {
+  .profile-lessons .mywallat .row .payment-popup .container h4 {
+    line-height: 28px;
+    font-size: 28px; } }
 .profile-lessons .mywallat .row .payment-popup .container p {
   margin-top: 10px; }
 .profile-lessons .mywallat .row .payment-popup .container p:last-of-type {
   color: #34ab44; }
 .profile-lessons .mywallat .row .payment-popup .container img {
   width: 130px; }
+@media (max-width: 1024px) {
+  .profile-lessons .mywallat .row .payment-popup .container img {
+    width: 98px; } }
 .profile-lessons .mywallat .row .finish-popup {
   display: none;
   position: fixed;
@@ -165,19 +186,31 @@
   position: fixed;
   top: 25%;
   left: 9%; }
+@media (max-width: 1024px) {
+  .profile-lessons .mywallat .row .finish-popup .container {
+    left: 0; } }
 .profile-lessons .mywallat .cont {
   border: 1px solid #e2e5ed;
   height: 500px;
   font-size: 13px;
   width: 100%; }
+@media (max-width: 1024px) {
+  .profile-lessons .mywallat .cont {
+    font-size: 10px; } }
 .profile-lessons .mywallat .cont .row {
   border-bottom: 1px solid #e2e5ed;
   padding: 25px;
   margin-right: 0;
   width: 100%; }
+@media (max-width: 1024px) {
+  .profile-lessons .mywallat .cont .row {
+    padding: 15px; } }
 .profile-lessons .mywallat .cont .row .col-3 {
   line-height: 1px;
   text-align: center; }
+@media (max-width: 1024px) {
+  .profile-lessons .mywallat .cont .row .col-3 {
+    line-height: 10px; } }
 .profile-lessons .myset .set {
   border: 1px solid #cdcdcd;
   border-radius: 9px; }
@@ -190,14 +223,21 @@
   border-bottom: none; }
 .profile-lessons .myset .set .row:nth-last-of-type(2) .btn {
   margin-top: 56px; }
-.profile-lessons .myset .set .row .col-6 {
+.profile-lessons .myset .set .row .col-xl-6 {
   direction: ltr; }
+@media (max-width: 1024px) {
+  .profile-lessons .myset .set .row .col-xl-6 {
+    font-size: 10px;
+    text-align: center; } }
 .profile-lessons .myset .set .row .btn {
   float: left;
   width: 120px;
   margin-top: 36px;
   background-color: #d9d9d9;
   border-color: #d9d9d9; }
+@media (max-width: 1024px) {
+  .profile-lessons .myset .set .row .btn {
+    float: none; } }
 
 .popup-editing, .popup-personl, .popup-call {
   display: none;
@@ -219,6 +259,10 @@
   width: 500px;
   height: 550px;
   background-color: #fff; }
+@media (max-width: 768px) {
+  .popup-editing .container, .popup-personl .container, .popup-call .container {
+    margin-left: -142px;
+    width: 284px; } }
 .popup-editing .container .close, .popup-personl .container .close, .popup-call .container .close {
   position: absolute;
   cursor: pointer;
@@ -226,6 +270,9 @@
   left: 10px; }
 .popup-editing .container label, .popup-personl .container label, .popup-call .container label {
   float: right; }
+@media (max-width: 1024px) {
+  .popup-editing .container label, .popup-personl .container label, .popup-call .container label {
+    font-size: 15px; } }
 .popup-editing .container input, .popup-personl .container input, .popup-call .container input {
   direction: rtl;
   margin-bottom: 10px; }
@@ -233,11 +280,21 @@
   float: right;
   margin: 10px 10px 10px 10px;
   width: 100px; }
+@media (max-width: 1024px) {
+  .popup-editing .container .btn, .popup-personl .container .btn, .popup-call .container .btn {
+    margin: 0 0 0  27px;
+    width: auto;
+    display: flex;
+    float: left; } }
 
 .popup-personl .container {
   width: 800px;
   left: 50%;
   margin-left: -400px; }
+@media (max-width: 1024px) {
+  .popup-personl .container {
+    width: 284px;
+    margin-left: -142px; } }
 .popup-personl .container img {
   width: 100px;
   height: 100px;
@@ -252,12 +309,18 @@
   color: #ffffff;
   padding: 10px;
   border-radius: 50%; }
+@media (max-width: 1024px) {
+  .popup-personl .container .fa-camera {
+    top: 190px; } }
 .popup-personl .container select {
   direction: rtl; }
 .popup-personl .container input {
   float: right;
   direction: rtl !important;
   text-align: right; }
+@media (max-width: 1024px) {
+  .popup-personl .container input {
+    font-size: 11px; } }
 .popup-personl .container .btn-primary {
   background-color: #159DD7;
   border-color: #159DD7; }
@@ -272,10 +335,20 @@
   top: 50%;
   margin-top: -150px;
   height: 340px; }
+@media (max-width: 768px) {
+  .popup-call .container {
+    width: 284px;
+    margin-left: -142px;
+    margin-top: -190px;
+    height: 379px; } }
 .popup-call input[type=checkbox] {
   float: right;
   margin: 7px; }
 .popup-call span {
   float: right; }
+@media (max-width: 768px) {
+  .popup-call span {
+    font-size: 12px;
+    line-height: 25px; } }
 
 /*# sourceMappingURL=profile-lessons.css.map */

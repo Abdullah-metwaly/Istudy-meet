@@ -25,6 +25,7 @@ $bcolor: #102770;
             .bcolor{background-color: $bcolor;}
             .body{
                 border-radius: 0 0 9px 9px ;
+                margin-bottom: 15px;
                 P{color: $gcolor;
                 &:last-of-type{opacity: 0.8;}}
                 padding: 5px;

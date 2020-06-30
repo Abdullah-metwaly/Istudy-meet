@@ -2,10 +2,6 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url("../images/sign-cover.jpg");
-    // height: 100%;
-    // @media (max-width:1024px) {
-    //    height: none;
-    // }
     @extend .overlay;
     .row {
         margin: 0;
@@ -13,12 +9,6 @@
         & > div {
             padding: 60px;
             float: left;
-            // @media (max-width:1024px) {
-            //     padding: 25px;
-            //     float: none;
-            //     display: block 
-            //     !important;
-            // }
             @media (max-width:768px) {
                 text-align: center;
                 padding: 45px;
@@ -42,6 +32,10 @@
                 height: 380px;
                 width: 420px;
                 background-color: #fff;
+                @media (max-width: 1024px) {
+                    width: 100% !important;
+                    height: 100% !important;
+                }
                 h4{
                     @media (max-width:768px) {
                        font-size: 1rem;
@@ -65,7 +59,10 @@
                         font-size: 12px;
                      }
                 &:last-child{font-size: 13px;}}
-                h3{color: $main-color;font-weight: normal;}
+                h3{color: $main-color;font-weight: normal;   
+                    @media (max-width: 1024px) {
+                   font-size: 12px;
+                }}
                 .btn{background-color: $main-color;margin-bottom: 5px;
                     @media (max-width: 375px) {
                        font-size: 13px;

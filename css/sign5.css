@@ -38,6 +38,10 @@
   height: 380px;
   width: 420px;
   background-color: #fff; }
+@media (max-width: 1024px) {
+  .signIn .row > div .sign-block {
+    width: 100% !important;
+    height: 100% !important; } }
 @media (max-width: 768px) {
   .signIn .row > div .sign-block h4 {
     font-size: 1rem; } }
@@ -61,6 +65,9 @@
 .signIn .row > div .sign-block h3 {
   color: #159DD7;
   font-weight: normal; }
+@media (max-width: 1024px) {
+  .signIn .row > div .sign-block h3 {
+    font-size: 12px; } }
 .signIn .row > div .sign-block .btn {
   background-color: #159DD7;
   margin-bottom: 5px; }

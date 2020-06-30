@@ -30,6 +30,7 @@
   background-color: #102770; }
 .price-plan .container .row .body, .annual-plan .container .row .body {
   border-radius: 0 0 9px 9px;
+  margin-bottom: 15px;
   padding: 5px;
   border: 1px solid #959595; }
 .price-plan .container .row .body P, .annual-plan .container .row .body P {

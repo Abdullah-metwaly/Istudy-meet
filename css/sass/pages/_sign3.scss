@@ -1,15 +1,23 @@
-.signIn{
-    .sign-block{
+.signIn {
+    .sign-block {
         height: 410px !important;
         width: 500px !important;
-        input{
+        @media (max-width: 1024px) {
+            width: 100% !important;
+            height: 100% !important;
+        }
+        input {
             border-radius: 5px;
             direction: rtl;
-            padding:5px;
+            padding: 5px;
             border: 1px solid $gray-color;
             float: right;
             margin: 10px 10px 15px 20px;
-
-}
+            @media (max-width:1024px) {
+                margin: auto;
+                margin-bottom: 12px;
+                width: 100%;
+            }
+        }
     }
 }

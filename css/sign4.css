@@ -7,8 +7,6 @@
   width: 100%;
   background-color: rgba(21, 157, 215, 0.7); }
 
-.signIn {
-  height: 120vh; }
 .signIn .sign-block {
   height: 620px !important; }
 .signIn .sign-block .text {
@@ -19,11 +17,18 @@
 .signIn .sign-block .laws label {
   padding: 0 30px 0 6px;
   color: #159DD7; }
+@media (max-width: 420px) {
+  .signIn .sign-block .laws label {
+    font-size: 12px; } }
 .signIn .sign-block .check-sec {
   width: 420px;
   margin-left: -30px;
   height: 99px;
   background-color: rgba(112, 112, 112, 0.4); }
+@media (max-width: 1024px) {
+  .signIn .sign-block .check-sec {
+    width: 100% !important;
+    margin-left: 0; } }
 .signIn .sign-block .check-sec label {
   background-color: #159DD7; }
 .signIn .sign-block .check-sec input {
