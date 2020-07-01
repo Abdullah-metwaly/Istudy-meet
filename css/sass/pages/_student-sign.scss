@@ -29,6 +29,12 @@
         width: 500px;
         height: 570px ;
         background-color: #fff;
+        @media (max-width:420px) {
+            margin-left: -150px;
+            width: 300px;
+            position: absolute;
+            top: 300px;
+        }
         .teacher {
             border-color: $gray-color !important;
             color: $gray-color !important;
@@ -57,6 +63,9 @@
         }
         .form-control {
             margin: 10px 0 10px 0;
+            @media (max-width:420px) {
+                font-size: 14px;
+            }
         }
     }
 }
@@ -79,7 +88,7 @@
            margin-top: 51px !important;
            margin-left: 11px !important;
            width: 299px !important;
-           height: 667px !important;
+        //    height: 667px !important;
          }
         @media (max-width:768px) {
             margin-top: -304px;
@@ -90,7 +99,7 @@
          @media (min-width:768px) {
              margin-left: -300px !important;
             width: 600px !important;
-            height: 633px !important ;
+            // height: 633px !important ;
          }
         h3 {
             margin-top: 19px;

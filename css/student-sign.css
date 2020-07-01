@@ -33,6 +33,12 @@
   width: 500px;
   height: 570px;
   background-color: #fff; }
+@media (max-width: 420px) {
+  .student-sign .container, .student-signup1 .container, .student-signup2 .container, .student-signup3 .container {
+    margin-left: -150px;
+    width: 300px;
+    position: absolute;
+    top: 300px; } }
 .student-sign .container .teacher, .student-signup1 .container .teacher, .student-signup2 .container .teacher, .student-signup3 .container .teacher {
   border-color: #707070 !important;
   color: #707070 !important;
@@ -54,6 +60,9 @@
   font-size: 25px; }
 .student-sign .container .form-control, .student-signup1 .container .form-control, .student-signup2 .container .form-control, .student-signup3 .container .form-control {
   margin: 10px 0 10px 0; }
+@media (max-width: 420px) {
+  .student-sign .container .form-control, .student-signup1 .container .form-control, .student-signup2 .container .form-control, .student-signup3 .container .form-control {
+    font-size: 14px; } }
 
 .student-signup1 .container, .student-signup2 .container, .student-signup3 .container {
   padding: 10px;
@@ -71,8 +80,7 @@
     left: 0;
     margin-top: 51px !important;
     margin-left: 11px !important;
-    width: 299px !important;
-    height: 667px !important; } }
+    width: 299px !important; } }
 @media (max-width: 768px) {
   .student-signup1 .container, .student-signup2 .container, .student-signup3 .container {
     margin-top: -304px;
@@ -82,8 +90,7 @@
 @media (min-width: 768px) {
   .student-signup1 .container, .student-signup2 .container, .student-signup3 .container {
     margin-left: -300px !important;
-    width: 600px !important;
-    height: 633px !important; } }
+    width: 600px !important; } }
 .student-signup1 .container h3, .student-signup2 .container h3, .student-signup3 .container h3 {
   margin-top: 19px; }
 .student-signup1 .container .first-step, .student-signup1 .container .second-step, .student-signup2 .container .first-step, .student-signup2 .container .second-step, .student-signup3 .container .first-step, .student-signup3 .container .second-step {
